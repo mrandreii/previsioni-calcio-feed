@@ -1,0 +1,145 @@
+{
+ "schema_version": "1.0",
+ "generato_il": "2026-09-16T18:17:36Z",
+ "giorno_operativo": "2026-09-16",
+ "stato": "ok",
+ "freschezza": {
+  "football_data": {
+   "ultimo_risultato": "2026-09-14",
+   "giorni_fa": 2,
+   "record": 354,
+   "ok": true
+  },
+  "understat_xg": {
+   "ultima_stagione": "2526",
+   "record": 60,
+   "ok": true
+  },
+  "api_football_odds": {
+   "chiamate_ok": 12,
+   "fixture_con_quote": 2,
+   "fixture_totali": 2,
+   "ok": true
+  },
+  "api_football_injuries": {
+   "chiamate_ok": 2,
+   "record": 22,
+   "usate_dal_modello": false,
+   "ok": true
+  },
+  "transfermarkt": {
+   "stagione_valori": "2526",
+   "record": 1170,
+   "ok": true
+  }
+ },
+ "modello": {
+  "commit": "5400da7",
+  "logloss_gap_test": 0.0135,
+  "w_shrinkage": null,
+  "shrinkage": {
+   "testato": true,
+   "w_stimato": 0.0,
+   "adottato": false,
+   "motivo": "non batte il mercato fuori campione (analisi_2026_09/shrinkage_report.md)"
+  },
+  "gate_superato": false
+ },
+ "regole": {
+  "criterio": "edge_pp",
+  "soglia_pp": 0.05,
+  "quota_max": 3.0,
+  "pipeline_ammesse": [
+   "xg"
+  ],
+  "modalita": "shadow"
+ },
+ "partite": [
+  {
+   "fixture_id": 1570385,
+   "lega": "Liga",
+   "pipeline": "xg",
+   "giornata": "Regular Season - 6",
+   "kickoff_locale": "2026-09-16T21:30",
+   "casa": "Barcelona",
+   "ospite": "Santander",
+   "p_modello": {
+    "1": 0.8906,
+    "X": 0.0786,
+    "2": 0.0308
+   },
+   "p_finale": {
+    "1": 0.8906,
+    "X": 0.0786,
+    "2": 0.0308
+   },
+   "quota_ingresso_richiesta": {
+    "1": 1.19,
+    "X": 34.97,
+    "2": null
+   },
+   "qualita": {
+    "xg_disponibile": true,
+    "assenze_alimentate": false,
+    "neopromossa": true,
+    "snapshot_rosa_recente": true,
+    "n_match_stagione": 5
+   },
+   "fiducia_suggerita": 4,
+   "flag": [
+    "INIZIO STAGIONE",
+    "ASSENZE NON ALIMENTATE"
+   ],
+   "candidato": false
+  },
+  {
+   "fixture_id": 1570389,
+   "lega": "Liga",
+   "pipeline": "xg",
+   "giornata": "Regular Season - 6",
+   "kickoff_locale": "2026-09-16T21:30",
+   "casa": "Levante",
+   "ospite": "Ath Bilbao",
+   "p_modello": {
+    "1": 0.3721,
+    "X": 0.2817,
+    "2": 0.3462
+   },
+   "p_finale": {
+    "1": 0.3721,
+    "X": 0.2817,
+    "2": 0.3462
+   },
+   "quota_ingresso_richiesta": {
+    "1": 3.1,
+    "X": 4.32,
+    "2": 3.38
+   },
+   "qualita": {
+    "xg_disponibile": true,
+    "assenze_alimentate": false,
+    "neopromossa": false,
+    "snapshot_rosa_recente": true,
+    "n_match_stagione": 5
+   },
+   "fiducia_suggerita": 5,
+   "flag": [
+    "INIZIO STAGIONE",
+    "ASSENZE NON ALIMENTATE"
+   ],
+   "candidato": false
+  }
+ ],
+ "candidati": [],
+ "diagnostica": {
+  "partite_totali": 2,
+  "candidati": 0,
+  "scartati_soglia": 1,
+  "scartati_quota_max": 1,
+  "scartati_dati": 0,
+  "scartati_pipeline": 0,
+  "scartati_fiducia": 0,
+  "scartati_stake": 0,
+  "escluse_dal_cap": 0
+ }
+}
