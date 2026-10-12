@@ -1,0 +1,294 @@
+{
+ "schema_version": "1.0",
+ "generato_il": "2026-10-12T13:09:05Z",
+ "giorno_operativo": "2026-10-12",
+ "stato": "ok",
+ "freschezza": {
+  "football_data": {
+   "ultimo_risultato": "2026-09-20",
+   "giorni_fa": 22,
+   "record": 438,
+   "partite_senza_risultato": 0,
+   "ok": true
+  },
+  "understat_xg": {
+   "ultima_stagione": "2526",
+   "record": 60,
+   "ok": true
+  },
+  "api_football_odds": {
+   "chiamate_ok": 18,
+   "fixture_con_quote": 5,
+   "fixture_totali": 5,
+   "ok": true
+  },
+  "transfermarkt": {
+   "stagione_valori": "2526",
+   "record": 1170,
+   "foto_del": "2026-07-09",
+   "ok": true
+  }
+ },
+ "modello": {
+  "commit": "4d39035",
+  "logloss_gap_test": 0.0135,
+  "w_shrinkage": null,
+  "shrinkage": {
+   "testato": true,
+   "w_stimato": 0.0,
+   "adottato": false,
+   "motivo": "non batte il mercato fuori campione (analisi_2026_09/shrinkage_report.md)"
+  },
+  "gate_superato": false
+ },
+ "regole": {
+  "criterio": "edge_pp",
+  "soglia_pp": 0.05,
+  "quota_max": 3.0,
+  "pipeline_ammesse": [
+   "xg"
+  ],
+  "stake_max_pick": 2,
+  "esposizione_max_giorno": 4,
+  "tetti_validi_fino_a": "decisione H8 (150 pick di sistema con CLV misurato)",
+  "penalita_rosa_non_recente": false,
+  "nota_fiducia": "fiducia_suggerita e' gia' calcolata con queste regole: non va ricalcolata dai flag. Con penalita_rosa_non_recente false, snapshot_rosa_recente false non toglie punti.",
+  "modalita": "shadow"
+ },
+ "partite": [
+  {
+   "fixture_id": 1557420,
+   "lega": "Premier League",
+   "pipeline": "xg",
+   "giornata": "Regular Season - 6",
+   "kickoff_locale": "2026-10-12T21:00",
+   "casa": "Coventry",
+   "ospite": "Newcastle",
+   "p_modello": {
+    "1": 0.2243,
+    "X": 0.2731,
+    "2": 0.5026
+   },
+   "p_finale": {
+    "1": 0.2243,
+    "X": 0.2731,
+    "2": 0.5026
+   },
+   "quota_ingresso_richiesta": {
+    "1": 5.74,
+    "X": 4.48,
+    "2": 2.21
+   },
+   "qualita": {
+    "xg_disponibile": true,
+    "assenze_alimentate": false,
+    "neopromossa": true,
+    "snapshot_rosa_recente": false,
+    "n_match_stagione": 5
+   },
+   "fiducia_suggerita": 4,
+   "flag": [
+    "INIZIO STAGIONE",
+    "ASSENZE NON ALIMENTATE"
+   ],
+   "candidato": false
+  },
+  {
+   "fixture_id": 1550137,
+   "lega": "Serie A",
+   "pipeline": "xg",
+   "giornata": "Regular Season - 6",
+   "kickoff_locale": "2026-10-12T18:30",
+   "casa": "Atalanta",
+   "ospite": "Venezia",
+   "p_modello": {
+    "1": 0.7072,
+    "X": 0.1882,
+    "2": 0.1046
+   },
+   "p_finale": {
+    "1": 0.7072,
+    "X": 0.1882,
+    "2": 0.1046
+   },
+   "quota_ingresso_richiesta": {
+    "1": 1.52,
+    "X": 7.24,
+    "2": 18.32
+   },
+   "qualita": {
+    "xg_disponibile": true,
+    "assenze_alimentate": false,
+    "neopromossa": true,
+    "snapshot_rosa_recente": false,
+    "n_match_stagione": 5
+   },
+   "fiducia_suggerita": 4,
+   "flag": [
+    "INIZIO STAGIONE",
+    "ASSENZE NON ALIMENTATE"
+   ],
+   "candidato": false
+  },
+  {
+   "fixture_id": 1550146,
+   "lega": "Serie A",
+   "pipeline": "xg",
+   "giornata": "Regular Season - 6",
+   "kickoff_locale": "2026-10-12T20:45",
+   "casa": "Torino",
+   "ospite": "Udinese",
+   "p_modello": {
+    "1": 0.353,
+    "X": 0.2776,
+    "2": 0.3695
+   },
+   "p_finale": {
+    "1": 0.353,
+    "X": 0.2776,
+    "2": 0.3695
+   },
+   "quota_ingresso_richiesta": {
+    "1": 3.3,
+    "X": 4.39,
+    "2": 3.13
+   },
+   "qualita": {
+    "xg_disponibile": true,
+    "assenze_alimentate": false,
+    "neopromossa": false,
+    "snapshot_rosa_recente": false,
+    "n_match_stagione": 5
+   },
+   "fiducia_suggerita": 5,
+   "flag": [
+    "INIZIO STAGIONE",
+    "ASSENZE NON ALIMENTATE"
+   ],
+   "candidato": false
+  },
+  {
+   "fixture_id": 1570407,
+   "lega": "Liga",
+   "pipeline": "xg",
+   "giornata": "Regular Season - 8",
+   "kickoff_locale": "2026-10-12T21:00",
+   "casa": "Levante",
+   "ospite": "Sevilla",
+   "p_modello": {
+    "1": 0.4197,
+    "X": 0.2803,
+    "2": 0.3
+   },
+   "p_finale": {
+    "1": 0.4197,
+    "X": 0.2803,
+    "2": 0.3
+   },
+   "quota_ingresso_richiesta": {
+    "1": 2.7,
+    "X": 4.34,
+    "2": 4.0
+   },
+   "qualita": {
+    "xg_disponibile": true,
+    "assenze_alimentate": false,
+    "neopromossa": false,
+    "snapshot_rosa_recente": false,
+    "n_match_stagione": 6
+   },
+   "fiducia_suggerita": 5,
+   "flag": [
+    "INIZIO STAGIONE",
+    "ASSENZE NON ALIMENTATE"
+   ],
+   "candidato": false
+  },
+  {
+   "fixture_id": 1575514,
+   "lega": "Liga Portugal",
+   "pipeline": "ripiego",
+   "giornata": "Regular Season - 8",
+   "kickoff_locale": "2026-10-12T21:15",
+   "casa": "Famalicao",
+   "ospite": "Alverca",
+   "p_modello": {
+    "1": 0.5142,
+    "X": 0.3087,
+    "2": 0.177
+   },
+   "p_finale": {
+    "1": 0.5142,
+    "X": 0.3087,
+    "2": 0.177
+   },
+   "quota_ingresso_richiesta": {
+    "1": 2.15,
+    "X": 3.87,
+    "2": 7.87
+   },
+   "qualita": {
+    "xg_disponibile": false,
+    "assenze_alimentate": false,
+    "neopromossa": false,
+    "snapshot_rosa_recente": false,
+    "n_match_stagione": 7
+   },
+   "fiducia_suggerita": 5,
+   "flag": [
+    "ASSENZE NON ALIMENTATE"
+   ],
+   "candidato": false
+  }
+ ],
+ "candidati": [],
+ "partite_senza_modello": [
+  {
+   "fixture_id": 1492404,
+   "lega": "Brasile Serie A",
+   "giornata": "Regular Season - 30",
+   "kickoff_locale": "2026-10-12T21:00",
+   "casa": "Coritiba",
+   "ospite": "Botafogo RJ",
+   "misurabile": "solo 1X2",
+   "flag": [
+    "MODELLO NON DISPONIBILE"
+   ]
+  },
+  {
+   "fixture_id": 1493173,
+   "lega": "Argentina Liga Profesional",
+   "giornata": "Clausura - 12",
+   "kickoff_locale": "2026-10-12T21:00",
+   "casa": "Lanus",
+   "ospite": "Velez Sarsfield",
+   "misurabile": "solo 1X2",
+   "flag": [
+    "MODELLO NON DISPONIBILE"
+   ]
+  },
+  {
+   "fixture_id": 1493171,
+   "lega": "Argentina Liga Profesional",
+   "giornata": "Clausura - 12",
+   "kickoff_locale": "2026-10-12T23:30",
+   "casa": "Gimnasia Mendoza",
+   "ospite": "Newells Old Boys",
+   "misurabile": "solo 1X2",
+   "flag": [
+    "MODELLO NON DISPONIBILE"
+   ]
+  }
+ ],
+ "diagnostica": {
+  "partite_totali": 5,
+  "candidati": 0,
+  "scartati_soglia": 3,
+  "scartati_quota_max": 1,
+  "scartati_dati": 0,
+  "scartati_pipeline": 0,
+  "scartati_fiducia": 1,
+  "scartati_stake": 0,
+  "escluse_dal_cap": 0
+ }
+}
