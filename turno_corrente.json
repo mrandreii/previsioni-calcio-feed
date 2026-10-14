@@ -1,12 +1,12 @@
 {
  "schema_version": "1.0",
- "generato_il": "2026-10-13T12:42:12Z",
- "giorno_operativo": "2026-10-13",
+ "generato_il": "2026-10-14T10:10:53Z",
+ "giorno_operativo": "2026-10-14",
  "stato": "ok",
  "freschezza": {
   "football_data": {
    "ultimo_risultato": "2026-10-12",
-   "giorni_fa": 1,
+   "giorni_fa": 2,
    "record": 512,
    "partite_senza_risultato": 0,
    "ok": true
@@ -30,7 +30,7 @@
   }
  },
  "modello": {
-  "commit": "d90185e",
+  "commit": "3f01d94",
   "logloss_gap_test": 0.0135,
   "w_shrinkage": null,
   "shrinkage": {
