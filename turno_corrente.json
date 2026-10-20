@@ -1,12 +1,12 @@
 {
  "schema_version": "1.0",
- "generato_il": "2026-10-19T10:44:54Z",
- "giorno_operativo": "2026-10-19",
+ "generato_il": "2026-10-20T10:02:45Z",
+ "giorno_operativo": "2026-10-20",
  "stato": "ok",
  "freschezza": {
   "football_data": {
    "ultimo_risultato": "2026-10-12",
-   "giorni_fa": 7,
+   "giorni_fa": 8,
    "record": 512,
    "partite_senza_risultato": 0,
    "ok": true
@@ -17,9 +17,9 @@
    "ok": true
   },
   "api_football_odds": {
-   "chiamate_ok": 15,
-   "fixture_con_quote": 5,
-   "fixture_totali": 5,
+   "chiamate_ok": 10,
+   "fixture_con_quote": 0,
+   "fixture_totali": 0,
    "ok": true
   },
   "transfermarkt": {
@@ -30,7 +30,7 @@
   }
  },
  "modello": {
-  "commit": "9c6e9da",
+  "commit": "0bfc764",
   "logloss_gap_test": 0.0135,
   "w_shrinkage": null,
   "shrinkage": {
@@ -55,198 +55,14 @@
   "nota_fiducia": "fiducia_suggerita e' gia' calcolata con queste regole: non va ricalcolata dai flag. Con penalita_rosa_non_recente false, snapshot_rosa_recente false non toglie punti.",
   "modalita": "shadow"
  },
- "partite": [
-  {
-   "fixture_id": 1557436,
-   "lega": "Premier League",
-   "pipeline": "xg",
-   "giornata": "Regular Season - 7",
-   "kickoff_locale": "2026-10-19T21:00",
-   "casa": "Tottenham",
-   "ospite": "Coventry",
-   "p_modello": {
-    "1": 0.5304,
-    "X": 0.2745,
-    "2": 0.1951
-   },
-   "p_finale": {
-    "1": 0.5304,
-    "X": 0.2745,
-    "2": 0.1951
-   },
-   "quota_ingresso_richiesta": {
-    "1": 2.08,
-    "X": 4.45,
-    "2": 6.89
-   },
-   "qualita": {
-    "xg_disponibile": true,
-    "assenze_alimentate": false,
-    "neopromossa": true,
-    "snapshot_rosa_recente": false,
-    "n_match_stagione": 6
-   },
-   "fiducia_suggerita": 4,
-   "flag": [
-    "INIZIO STAGIONE",
-    "ASSENZE NON ALIMENTATE"
-   ],
-   "candidato": false
-  },
-  {
-   "fixture_id": 1550153,
-   "lega": "Serie A",
-   "pipeline": "xg",
-   "giornata": "Regular Season - 7",
-   "kickoff_locale": "2026-10-19T18:30",
-   "casa": "Monza",
-   "ospite": "Cagliari",
-   "p_modello": {
-    "1": 0.2283,
-    "X": 0.2763,
-    "2": 0.4954
-   },
-   "p_finale": {
-    "1": 0.2283,
-    "X": 0.2763,
-    "2": 0.4954
-   },
-   "quota_ingresso_richiesta": {
-    "1": 5.61,
-    "X": 4.42,
-    "2": 2.25
-   },
-   "qualita": {
-    "xg_disponibile": true,
-    "assenze_alimentate": false,
-    "neopromossa": true,
-    "snapshot_rosa_recente": false,
-    "n_match_stagione": 6
-   },
-   "fiducia_suggerita": 4,
-   "flag": [
-    "INIZIO STAGIONE",
-    "ASSENZE NON ALIMENTATE"
-   ],
-   "candidato": false
-  },
-  {
-   "fixture_id": 1550154,
-   "lega": "Serie A",
-   "pipeline": "xg",
-   "giornata": "Regular Season - 7",
-   "kickoff_locale": "2026-10-19T20:45",
-   "casa": "Parma",
-   "ospite": "Torino",
-   "p_modello": {
-    "1": 0.3511,
-    "X": 0.3078,
-    "2": 0.3411
-   },
-   "p_finale": {
-    "1": 0.3511,
-    "X": 0.3078,
-    "2": 0.3411
-   },
-   "quota_ingresso_richiesta": {
-    "1": 3.32,
-    "X": 3.88,
-    "2": 3.44
-   },
-   "qualita": {
-    "xg_disponibile": true,
-    "assenze_alimentate": false,
-    "neopromossa": false,
-    "snapshot_rosa_recente": false,
-    "n_match_stagione": 6
-   },
-   "fiducia_suggerita": 5,
-   "flag": [
-    "INIZIO STAGIONE",
-    "ASSENZE NON ALIMENTATE"
-   ],
-   "candidato": false
-  },
-  {
-   "fixture_id": 1570417,
-   "lega": "Liga",
-   "pipeline": "xg",
-   "giornata": "Regular Season - 9",
-   "kickoff_locale": "2026-10-19T21:00",
-   "casa": "Getafe",
-   "ospite": "Vallecano",
-   "p_modello": {
-    "1": 0.3424,
-    "X": 0.3121,
-    "2": 0.3455
-   },
-   "p_finale": {
-    "1": 0.3424,
-    "X": 0.3121,
-    "2": 0.3455
-   },
-   "quota_ingresso_richiesta": {
-    "1": 3.42,
-    "X": 3.82,
-    "2": 3.38
-   },
-   "qualita": {
-    "xg_disponibile": true,
-    "assenze_alimentate": false,
-    "neopromossa": false,
-    "snapshot_rosa_recente": false,
-    "n_match_stagione": 7
-   },
-   "fiducia_suggerita": 6,
-   "flag": [
-    "ASSENZE NON ALIMENTATE"
-   ],
-   "candidato": false
-  },
-  {
-   "fixture_id": 1575458,
-   "lega": "Liga Portugal",
-   "pipeline": "ripiego",
-   "giornata": "Regular Season - 2",
-   "kickoff_locale": "2026-10-19T21:15",
-   "casa": "Sp Braga",
-   "ospite": "Gil Vicente",
-   "p_modello": {
-    "1": 0.4593,
-    "X": 0.3249,
-    "2": 0.2158
-   },
-   "p_finale": {
-    "1": 0.4593,
-    "X": 0.3249,
-    "2": 0.2158
-   },
-   "quota_ingresso_richiesta": {
-    "1": 2.44,
-    "X": 3.64,
-    "2": 6.03
-   },
-   "qualita": {
-    "xg_disponibile": false,
-    "assenze_alimentate": false,
-    "neopromossa": false,
-    "snapshot_rosa_recente": false,
-    "n_match_stagione": 7
-   },
-   "fiducia_suggerita": 5,
-   "flag": [
-    "ASSENZE NON ALIMENTATE"
-   ],
-   "candidato": false
-  }
- ],
+ "partite": [],
  "candidati": [],
  "partite_senza_modello": [],
  "diagnostica": {
-  "partite_totali": 5,
+  "partite_totali": 0,
   "candidati": 0,
-  "scartati_soglia": 2,
-  "scartati_quota_max": 3,
+  "scartati_soglia": 0,
+  "scartati_quota_max": 0,
   "scartati_dati": 0,
   "scartati_pipeline": 0,
   "scartati_fiducia": 0,
