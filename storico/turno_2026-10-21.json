@@ -1,0 +1,109 @@
+{
+ "schema_version": "1.0",
+ "generato_il": "2026-10-21T10:07:19Z",
+ "giorno_operativo": "2026-10-21",
+ "stato": "ok",
+ "freschezza": {
+  "football_data": {
+   "ultimo_risultato": "2026-10-19",
+   "giorni_fa": 2,
+   "record": 570,
+   "partite_senza_risultato": 0,
+   "ok": true
+  },
+  "understat_xg": {
+   "ultima_stagione": "2526",
+   "record": 60,
+   "ok": true
+  },
+  "api_football_odds": {
+   "chiamate_ok": 11,
+   "fixture_con_quote": 1,
+   "fixture_totali": 1,
+   "ok": true
+  },
+  "transfermarkt": {
+   "stagione_valori": "2526",
+   "record": 1170,
+   "foto_del": "2026-07-09",
+   "ok": true
+  }
+ },
+ "modello": {
+  "commit": "2369d2a",
+  "logloss_gap_test": 0.0135,
+  "w_shrinkage": null,
+  "shrinkage": {
+   "testato": true,
+   "w_stimato": 0.0,
+   "adottato": false,
+   "motivo": "non batte il mercato fuori campione (analisi_2026_09/shrinkage_report.md)"
+  },
+  "gate_superato": false
+ },
+ "regole": {
+  "criterio": "edge_pp",
+  "soglia_pp": 0.05,
+  "quota_max": 3.0,
+  "pipeline_ammesse": [
+   "xg"
+  ],
+  "stake_max_pick": 2,
+  "esposizione_max_giorno": 4,
+  "tetti_validi_fino_a": "decisione H8 (150 pick di sistema con CLV misurato)",
+  "penalita_rosa_non_recente": false,
+  "nota_fiducia": "fiducia_suggerita e' gia' calcolata con queste regole: non va ricalcolata dai flag. Con penalita_rosa_non_recente false, snapshot_rosa_recente false non toglie punti.",
+  "modalita": "shadow"
+ },
+ "partite": [
+  {
+   "fixture_id": 1570389,
+   "lega": "Liga",
+   "pipeline": "xg",
+   "giornata": "Regular Season - 6",
+   "kickoff_locale": "2026-10-21T20:00",
+   "casa": "Levante",
+   "ospite": "Ath Bilbao",
+   "p_modello": {
+    "1": 0.3581,
+    "X": 0.2854,
+    "2": 0.3565
+   },
+   "p_finale": {
+    "1": 0.3581,
+    "X": 0.2854,
+    "2": 0.3565
+   },
+   "quota_ingresso_richiesta": {
+    "1": 3.25,
+    "X": 4.25,
+    "2": 3.26
+   },
+   "qualita": {
+    "xg_disponibile": true,
+    "assenze_alimentate": false,
+    "neopromossa": false,
+    "snapshot_rosa_recente": false,
+    "n_match_stagione": 7
+   },
+   "fiducia_suggerita": 6,
+   "flag": [
+    "ASSENZE NON ALIMENTATE"
+   ],
+   "candidato": false
+  }
+ ],
+ "candidati": [],
+ "partite_senza_modello": [],
+ "diagnostica": {
+  "partite_totali": 1,
+  "candidati": 0,
+  "scartati_soglia": 0,
+  "scartati_quota_max": 1,
+  "scartati_dati": 0,
+  "scartati_pipeline": 0,
+  "scartati_fiducia": 0,
+  "scartati_stake": 0,
+  "escluse_dal_cap": 0
+ }
+}
