@@ -1,0 +1,391 @@
+{
+ "schema_version": "1.0",
+ "generato_il": "2026-10-23T10:02:34Z",
+ "giorno_operativo": "2026-10-23",
+ "stato": "ok",
+ "freschezza": {
+  "football_data": {
+   "ultimo_risultato": "2026-10-21",
+   "giorni_fa": 2,
+   "record": 571,
+   "partite_senza_risultato": 0,
+   "ok": true
+  },
+  "understat_xg": {
+   "ultima_stagione": "2526",
+   "record": 60,
+   "ok": true
+  },
+  "api_football_odds": {
+   "chiamate_ok": 20,
+   "fixture_con_quote": 8,
+   "fixture_totali": 8,
+   "ok": true
+  },
+  "transfermarkt": {
+   "stagione_valori": "2526",
+   "record": 1170,
+   "foto_del": "2026-07-09",
+   "ok": true
+  }
+ },
+ "modello": {
+  "commit": "751171d",
+  "logloss_gap_test": 0.0135,
+  "w_shrinkage": null,
+  "shrinkage": {
+   "testato": true,
+   "w_stimato": 0.0,
+   "adottato": false,
+   "motivo": "non batte il mercato fuori campione (analisi_2026_09/shrinkage_report.md)"
+  },
+  "gate_superato": false
+ },
+ "regole": {
+  "criterio": "edge_pp",
+  "soglia_pp": 0.05,
+  "quota_max": 3.0,
+  "pipeline_ammesse": [
+   "xg"
+  ],
+  "stake_max_pick": 2,
+  "esposizione_max_giorno": 4,
+  "tetti_validi_fino_a": "decisione H8 (150 pick di sistema con CLV misurato)",
+  "penalita_rosa_non_recente": false,
+  "nota_fiducia": "fiducia_suggerita e' gia' calcolata con queste regole: non va ricalcolata dai flag. Con penalita_rosa_non_recente false, snapshot_rosa_recente false non toglie punti.",
+  "modalita": "shadow"
+ },
+ "partite": [
+  {
+   "fixture_id": 1557443,
+   "lega": "Premier League",
+   "pipeline": "xg",
+   "giornata": "Regular Season - 8",
+   "kickoff_locale": "2026-10-23T21:00",
+   "casa": "Ipswich",
+   "ospite": "Nott'm Forest",
+   "p_modello": {
+    "1": 0.3106,
+    "X": 0.2916,
+    "2": 0.3977
+   },
+   "p_finale": {
+    "1": 0.3106,
+    "X": 0.2916,
+    "2": 0.3977
+   },
+   "quota_ingresso_richiesta": {
+    "1": 3.84,
+    "X": 4.14,
+    "2": 2.88
+   },
+   "qualita": {
+    "xg_disponibile": true,
+    "assenze_alimentate": false,
+    "neopromossa": true,
+    "snapshot_rosa_recente": false,
+    "n_match_stagione": 7
+   },
+   "fiducia_suggerita": 5,
+   "flag": [
+    "ASSENZE NON ALIMENTATE"
+   ],
+   "candidato": false
+  },
+  {
+   "fixture_id": 1550165,
+   "lega": "Serie A",
+   "pipeline": "xg",
+   "giornata": "Regular Season - 8",
+   "kickoff_locale": "2026-10-23T20:45",
+   "casa": "Torino",
+   "ospite": "Monza",
+   "p_modello": {
+    "1": 0.5427,
+    "X": 0.2416,
+    "2": 0.2157
+   },
+   "p_finale": {
+    "1": 0.5427,
+    "X": 0.2416,
+    "2": 0.2157
+   },
+   "quota_ingresso_richiesta": {
+    "1": 2.03,
+    "X": 5.22,
+    "2": 6.04
+   },
+   "qualita": {
+    "xg_disponibile": true,
+    "assenze_alimentate": false,
+    "neopromossa": true,
+    "snapshot_rosa_recente": false,
+    "n_match_stagione": 7
+   },
+   "fiducia_suggerita": 5,
+   "flag": [
+    "ASSENZE NON ALIMENTATE"
+   ],
+   "candidato": true,
+   "esito_candidato": "1",
+   "stake_provvisorio": 1
+  },
+  {
+   "fixture_id": 1570423,
+   "lega": "Liga",
+   "pipeline": "xg",
+   "giornata": "Regular Season - 10",
+   "kickoff_locale": "2026-10-23T21:00",
+   "casa": "Alaves",
+   "ospite": "Malaga",
+   "p_modello": {
+    "1": 0.5894,
+    "X": 0.2496,
+    "2": 0.161
+   },
+   "p_finale": {
+    "1": 0.5894,
+    "X": 0.2496,
+    "2": 0.161
+   },
+   "quota_ingresso_richiesta": {
+    "1": 1.85,
+    "X": 5.01,
+    "2": 9.01
+   },
+   "qualita": {
+    "xg_disponibile": true,
+    "assenze_alimentate": false,
+    "neopromossa": true,
+    "snapshot_rosa_recente": false,
+    "n_match_stagione": 9
+   },
+   "fiducia_suggerita": 5,
+   "flag": [
+    "ASSENZE NON ALIMENTATE"
+   ],
+   "candidato": false
+  },
+  {
+   "fixture_id": 1575196,
+   "lega": "Bundesliga",
+   "pipeline": "xg",
+   "giornata": "Regular Season - 7",
+   "kickoff_locale": "2026-10-23T20:30",
+   "casa": "Stuttgart",
+   "ospite": "M'gladbach",
+   "p_modello": {
+    "1": 0.7466,
+    "X": 0.1571,
+    "2": 0.0963
+   },
+   "p_finale": {
+    "1": 0.7466,
+    "X": 0.1571,
+    "2": 0.0963
+   },
+   "quota_ingresso_richiesta": {
+    "1": 1.44,
+    "X": 9.34,
+    "2": 21.6
+   },
+   "qualita": {
+    "xg_disponibile": true,
+    "assenze_alimentate": false,
+    "neopromossa": false,
+    "snapshot_rosa_recente": false,
+    "n_match_stagione": 6
+   },
+   "fiducia_suggerita": 5,
+   "flag": [
+    "INIZIO STAGIONE",
+    "ASSENZE NON ALIMENTATE"
+   ],
+   "candidato": false
+  },
+  {
+   "fixture_id": 1552794,
+   "lega": "Ligue 1",
+   "pipeline": "xg",
+   "giornata": "Regular Season - 8",
+   "kickoff_locale": "2026-10-23T20:45",
+   "casa": "Brest",
+   "ospite": "Nice",
+   "p_modello": {
+    "1": 0.375,
+    "X": 0.276,
+    "2": 0.3489
+   },
+   "p_finale": {
+    "1": 0.375,
+    "X": 0.276,
+    "2": 0.3489
+   },
+   "quota_ingresso_richiesta": {
+    "1": 3.08,
+    "X": 4.42,
+    "2": 3.35
+   },
+   "qualita": {
+    "xg_disponibile": true,
+    "assenze_alimentate": false,
+    "neopromossa": false,
+    "snapshot_rosa_recente": false,
+    "n_match_stagione": 7
+   },
+   "fiducia_suggerita": 6,
+   "flag": [
+    "ASSENZE NON ALIMENTATE"
+   ],
+   "candidato": false
+  },
+  {
+   "fixture_id": 1552198,
+   "lega": "Eredivisie",
+   "pipeline": "ripiego",
+   "giornata": "Regular Season - 10",
+   "kickoff_locale": "2026-10-23T20:00",
+   "casa": "Go Ahead Eagles",
+   "ospite": "Telstar",
+   "p_modello": {
+    "1": 0.5136,
+    "X": 0.2317,
+    "2": 0.2547
+   },
+   "p_finale": {
+    "1": 0.5136,
+    "X": 0.2317,
+    "2": 0.2547
+   },
+   "quota_ingresso_richiesta": {
+    "1": 2.16,
+    "X": 5.5,
+    "2": 4.89
+   },
+   "qualita": {
+    "xg_disponibile": false,
+    "assenze_alimentate": false,
+    "neopromossa": false,
+    "snapshot_rosa_recente": false,
+    "n_match_stagione": 9
+   },
+   "fiducia_suggerita": 5,
+   "flag": [
+    "ASSENZE NON ALIMENTATE"
+   ],
+   "candidato": false
+  },
+  {
+   "fixture_id": 1575526,
+   "lega": "Liga Portugal",
+   "pipeline": "ripiego",
+   "giornata": "Regular Season - 9",
+   "kickoff_locale": "2026-10-23T21:45",
+   "casa": "Guimaraes",
+   "ospite": "Maritimo",
+   "p_modello": {
+    "1": 0.4651,
+    "X": 0.3006,
+    "2": 0.2343
+   },
+   "p_finale": {
+    "1": 0.4651,
+    "X": 0.3006,
+    "2": 0.2343
+   },
+   "quota_ingresso_richiesta": {
+    "1": 2.41,
+    "X": 3.99,
+    "2": 5.43
+   },
+   "qualita": {
+    "xg_disponibile": false,
+    "assenze_alimentate": false,
+    "neopromossa": true,
+    "snapshot_rosa_recente": false,
+    "n_match_stagione": 8
+   },
+   "fiducia_suggerita": 4,
+   "flag": [
+    "ASSENZE NON ALIMENTATE"
+   ],
+   "candidato": false
+  },
+  {
+   "fixture_id": 1558657,
+   "lega": "Jupiler",
+   "pipeline": "ripiego",
+   "giornata": "Regular Season - 9",
+   "kickoff_locale": "2026-10-23T20:45",
+   "casa": "Kortrijk",
+   "ospite": "Mechelen",
+   "p_modello": {
+    "1": 0.3564,
+    "X": 0.3142,
+    "2": 0.3294
+   },
+   "p_finale": {
+    "1": 0.3564,
+    "X": 0.3142,
+    "2": 0.3294
+   },
+   "quota_ingresso_richiesta": {
+    "1": 3.26,
+    "X": 3.79,
+    "2": 3.58
+   },
+   "qualita": {
+    "xg_disponibile": false,
+    "assenze_alimentate": false,
+    "neopromossa": true,
+    "snapshot_rosa_recente": false,
+    "n_match_stagione": 8
+   },
+   "fiducia_suggerita": 4,
+   "flag": [
+    "ASSENZE NON ALIMENTATE"
+   ],
+   "candidato": false
+  }
+ ],
+ "candidati": [
+  1550165
+ ],
+ "partite_senza_modello": [
+  {
+   "fixture_id": 1493202,
+   "lega": "Argentina Liga Profesional",
+   "giornata": "Clausura - 14",
+   "kickoff_locale": "2026-10-23T23:00",
+   "casa": "Gimnasia L.P.",
+   "ospite": "Sarmiento Junin",
+   "misurabile": "solo 1X2",
+   "flag": [
+    "MODELLO NON DISPONIBILE"
+   ]
+  },
+  {
+   "fixture_id": 1493203,
+   "lega": "Argentina Liga Profesional",
+   "giornata": "Clausura - 14",
+   "kickoff_locale": "2026-10-23T23:30",
+   "casa": "Gimnasia Mendoza",
+   "ospite": "Platense",
+   "misurabile": "solo 1X2",
+   "flag": [
+    "MODELLO NON DISPONIBILE"
+   ]
+  }
+ ],
+ "diagnostica": {
+  "partite_totali": 8,
+  "candidati": 1,
+  "scartati_soglia": 5,
+  "scartati_quota_max": 2,
+  "scartati_dati": 0,
+  "scartati_pipeline": 0,
+  "scartati_fiducia": 0,
+  "scartati_stake": 0,
+  "escluse_dal_cap": 0
+ }
+}
