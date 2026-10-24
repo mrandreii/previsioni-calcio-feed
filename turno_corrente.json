@@ -1,12 +1,12 @@
 {
  "schema_version": "1.0",
- "generato_il": "2026-10-23T10:02:34Z",
- "giorno_operativo": "2026-10-23",
+ "generato_il": "2026-10-24T09:31:29Z",
+ "giorno_operativo": "2026-10-24",
  "stato": "ok",
  "freschezza": {
   "football_data": {
    "ultimo_risultato": "2026-10-21",
-   "giorni_fa": 2,
+   "giorni_fa": 3,
    "record": 571,
    "partite_senza_risultato": 0,
    "ok": true
@@ -17,9 +17,9 @@
    "ok": true
   },
   "api_football_odds": {
-   "chiamate_ok": 20,
-   "fixture_con_quote": 8,
-   "fixture_totali": 8,
+   "chiamate_ok": 46,
+   "fixture_con_quote": 29,
+   "fixture_totali": 29,
    "ok": true
   },
   "transfermarkt": {
@@ -30,7 +30,7 @@
   }
  },
  "modello": {
-  "commit": "751171d",
+  "commit": "a68b0e2",
   "logloss_gap_test": 0.0135,
   "w_shrinkage": null,
   "shrinkage": {
@@ -57,27 +57,99 @@
  },
  "partite": [
   {
-   "fixture_id": 1557443,
+   "fixture_id": 1557438,
    "lega": "Premier League",
    "pipeline": "xg",
    "giornata": "Regular Season - 8",
-   "kickoff_locale": "2026-10-23T21:00",
-   "casa": "Ipswich",
-   "ospite": "Nott'm Forest",
+   "kickoff_locale": "2026-10-24T13:30",
+   "casa": "Aston Villa",
+   "ospite": "Man City",
    "p_modello": {
-    "1": 0.3106,
-    "X": 0.2916,
-    "2": 0.3977
+    "1": 0.2431,
+    "X": 0.2516,
+    "2": 0.5053
    },
    "p_finale": {
-    "1": 0.3106,
-    "X": 0.2916,
-    "2": 0.3977
+    "1": 0.2431,
+    "X": 0.2516,
+    "2": 0.5053
    },
    "quota_ingresso_richiesta": {
-    "1": 3.84,
-    "X": 4.14,
-    "2": 2.88
+    "1": 5.18,
+    "X": 4.96,
+    "2": 2.2
+   },
+   "qualita": {
+    "xg_disponibile": true,
+    "assenze_alimentate": false,
+    "neopromossa": false,
+    "snapshot_rosa_recente": false,
+    "n_match_stagione": 7
+   },
+   "fiducia_suggerita": 6,
+   "flag": [
+    "ASSENZE NON ALIMENTATE"
+   ],
+   "candidato": false
+  },
+  {
+   "fixture_id": 1557437,
+   "lega": "Premier League",
+   "pipeline": "xg",
+   "giornata": "Regular Season - 8",
+   "kickoff_locale": "2026-10-24T16:00",
+   "casa": "Arsenal",
+   "ospite": "Everton",
+   "p_modello": {
+    "1": 0.6828,
+    "X": 0.2162,
+    "2": 0.101
+   },
+   "p_finale": {
+    "1": 0.6828,
+    "X": 0.2162,
+    "2": 0.101
+   },
+   "quota_ingresso_richiesta": {
+    "1": 1.58,
+    "X": 6.02,
+    "2": 19.61
+   },
+   "qualita": {
+    "xg_disponibile": true,
+    "assenze_alimentate": false,
+    "neopromossa": false,
+    "snapshot_rosa_recente": false,
+    "n_match_stagione": 7
+   },
+   "fiducia_suggerita": 6,
+   "flag": [
+    "ASSENZE NON ALIMENTATE"
+   ],
+   "candidato": false
+  },
+  {
+   "fixture_id": 1557440,
+   "lega": "Premier League",
+   "pipeline": "xg",
+   "giornata": "Regular Season - 8",
+   "kickoff_locale": "2026-10-24T16:00",
+   "casa": "Coventry",
+   "ospite": "Fulham",
+   "p_modello": {
+    "1": 0.3378,
+    "X": 0.3087,
+    "2": 0.3535
+   },
+   "p_finale": {
+    "1": 0.3378,
+    "X": 0.3087,
+    "2": 0.3535
+   },
+   "quota_ingresso_richiesta": {
+    "1": 3.47,
+    "X": 3.87,
+    "2": 3.29
    },
    "qualita": {
     "xg_disponibile": true,
@@ -93,65 +165,243 @@
    "candidato": false
   },
   {
-   "fixture_id": 1550165,
-   "lega": "Serie A",
+   "fixture_id": 1557439,
+   "lega": "Premier League",
    "pipeline": "xg",
    "giornata": "Regular Season - 8",
-   "kickoff_locale": "2026-10-23T20:45",
-   "casa": "Torino",
-   "ospite": "Monza",
+   "kickoff_locale": "2026-10-24T18:30",
+   "casa": "Chelsea",
+   "ospite": "Tottenham",
    "p_modello": {
-    "1": 0.5427,
-    "X": 0.2416,
-    "2": 0.2157
+    "1": 0.5914,
+    "X": 0.2271,
+    "2": 0.1816
    },
    "p_finale": {
-    "1": 0.5427,
-    "X": 0.2416,
-    "2": 0.2157
+    "1": 0.5914,
+    "X": 0.2271,
+    "2": 0.1816
    },
    "quota_ingresso_richiesta": {
-    "1": 2.03,
-    "X": 5.22,
-    "2": 6.04
+    "1": 1.85,
+    "X": 5.65,
+    "2": 7.6
    },
    "qualita": {
     "xg_disponibile": true,
     "assenze_alimentate": false,
-    "neopromossa": true,
+    "neopromossa": false,
     "snapshot_rosa_recente": false,
     "n_match_stagione": 7
    },
-   "fiducia_suggerita": 5,
+   "fiducia_suggerita": 6,
    "flag": [
     "ASSENZE NON ALIMENTATE"
    ],
-   "candidato": true,
-   "esito_candidato": "1",
-   "stake_provvisorio": 1
+   "candidato": false
   },
   {
-   "fixture_id": 1570423,
+   "fixture_id": 1550158,
+   "lega": "Serie A",
+   "pipeline": "xg",
+   "giornata": "Regular Season - 8",
+   "kickoff_locale": "2026-10-24T15:00",
+   "casa": "Cagliari",
+   "ospite": "Bologna",
+   "p_modello": {
+    "1": 0.3302,
+    "X": 0.3095,
+    "2": 0.3603
+   },
+   "p_finale": {
+    "1": 0.3302,
+    "X": 0.3095,
+    "2": 0.3603
+   },
+   "quota_ingresso_richiesta": {
+    "1": 3.57,
+    "X": 3.85,
+    "2": 3.22
+   },
+   "qualita": {
+    "xg_disponibile": true,
+    "assenze_alimentate": false,
+    "neopromossa": false,
+    "snapshot_rosa_recente": false,
+    "n_match_stagione": 7
+   },
+   "fiducia_suggerita": 6,
+   "flag": [
+    "ASSENZE NON ALIMENTATE"
+   ],
+   "candidato": false
+  },
+  {
+   "fixture_id": 1550159,
+   "lega": "Serie A",
+   "pipeline": "xg",
+   "giornata": "Regular Season - 8",
+   "kickoff_locale": "2026-10-24T15:00",
+   "casa": "Como",
+   "ospite": "Sassuolo",
+   "p_modello": {
+    "1": 0.6251,
+    "X": 0.2137,
+    "2": 0.1612
+   },
+   "p_finale": {
+    "1": 0.6251,
+    "X": 0.2137,
+    "2": 0.1612
+   },
+   "quota_ingresso_richiesta": {
+    "1": 1.74,
+    "X": 6.11,
+    "2": 8.99
+   },
+   "qualita": {
+    "xg_disponibile": true,
+    "assenze_alimentate": false,
+    "neopromossa": false,
+    "snapshot_rosa_recente": false,
+    "n_match_stagione": 7
+   },
+   "fiducia_suggerita": 6,
+   "flag": [
+    "ASSENZE NON ALIMENTATE"
+   ],
+   "candidato": false
+  },
+  {
+   "fixture_id": 1550164,
+   "lega": "Serie A",
+   "pipeline": "xg",
+   "giornata": "Regular Season - 8",
+   "kickoff_locale": "2026-10-24T18:00",
+   "casa": "Napoli",
+   "ospite": "Roma",
+   "p_modello": {
+    "1": 0.2866,
+    "X": 0.306,
+    "2": 0.4074
+   },
+   "p_finale": {
+    "1": 0.2866,
+    "X": 0.306,
+    "2": 0.4074
+   },
+   "quota_ingresso_richiesta": {
+    "1": 4.23,
+    "X": 3.91,
+    "2": 2.8
+   },
+   "qualita": {
+    "xg_disponibile": true,
+    "assenze_alimentate": false,
+    "neopromossa": false,
+    "snapshot_rosa_recente": false,
+    "n_match_stagione": 7
+   },
+   "fiducia_suggerita": 6,
+   "flag": [
+    "ASSENZE NON ALIMENTATE"
+   ],
+   "candidato": false
+  },
+  {
+   "fixture_id": 1550162,
+   "lega": "Serie A",
+   "pipeline": "xg",
+   "giornata": "Regular Season - 8",
+   "kickoff_locale": "2026-10-24T20:45",
+   "casa": "Lazio",
+   "ospite": "Parma",
+   "p_modello": {
+    "1": 0.6449,
+    "X": 0.2302,
+    "2": 0.1249
+   },
+   "p_finale": {
+    "1": 0.6449,
+    "X": 0.2302,
+    "2": 0.1249
+   },
+   "quota_ingresso_richiesta": {
+    "1": 1.68,
+    "X": 5.55,
+    "2": 13.35
+   },
+   "qualita": {
+    "xg_disponibile": true,
+    "assenze_alimentate": false,
+    "neopromossa": false,
+    "snapshot_rosa_recente": false,
+    "n_match_stagione": 7
+   },
+   "fiducia_suggerita": 6,
+   "flag": [
+    "ASSENZE NON ALIMENTATE"
+   ],
+   "candidato": false
+  },
+  {
+   "fixture_id": 1570429,
    "lega": "Liga",
    "pipeline": "xg",
    "giornata": "Regular Season - 10",
-   "kickoff_locale": "2026-10-23T21:00",
-   "casa": "Alaves",
-   "ospite": "Malaga",
+   "kickoff_locale": "2026-10-24T14:00",
+   "casa": "Vallecano",
+   "ospite": "Elche",
    "p_modello": {
-    "1": 0.5894,
-    "X": 0.2496,
-    "2": 0.161
+    "1": 0.5195,
+    "X": 0.2433,
+    "2": 0.2372
    },
    "p_finale": {
-    "1": 0.5894,
-    "X": 0.2496,
-    "2": 0.161
+    "1": 0.5195,
+    "X": 0.2433,
+    "2": 0.2372
    },
    "quota_ingresso_richiesta": {
-    "1": 1.85,
-    "X": 5.01,
-    "2": 9.01
+    "1": 2.13,
+    "X": 5.17,
+    "2": 5.34
+   },
+   "qualita": {
+    "xg_disponibile": true,
+    "assenze_alimentate": false,
+    "neopromossa": false,
+    "snapshot_rosa_recente": false,
+    "n_match_stagione": 8
+   },
+   "fiducia_suggerita": 6,
+   "flag": [
+    "ASSENZE NON ALIMENTATE"
+   ],
+   "candidato": false
+  },
+  {
+   "fixture_id": 1570428,
+   "lega": "Liga",
+   "pipeline": "xg",
+   "giornata": "Regular Season - 10",
+   "kickoff_locale": "2026-10-24T16:15",
+   "casa": "Santander",
+   "ospite": "Espanol",
+   "p_modello": {
+    "1": 0.4036,
+    "X": 0.2736,
+    "2": 0.3228
+   },
+   "p_finale": {
+    "1": 0.4036,
+    "X": 0.2736,
+    "2": 0.3228
+   },
+   "quota_ingresso_richiesta": {
+    "1": 2.83,
+    "X": 4.47,
+    "2": 3.67
    },
    "qualita": {
     "xg_disponibile": true,
@@ -167,27 +417,99 @@
    "candidato": false
   },
   {
-   "fixture_id": 1575196,
+   "fixture_id": 1570432,
+   "lega": "Liga",
+   "pipeline": "xg",
+   "giornata": "Regular Season - 10",
+   "kickoff_locale": "2026-10-24T18:30",
+   "casa": "Valencia",
+   "ospite": "Villarreal",
+   "p_modello": {
+    "1": 0.2986,
+    "X": 0.2863,
+    "2": 0.4151
+   },
+   "p_finale": {
+    "1": 0.2986,
+    "X": 0.2863,
+    "2": 0.4151
+   },
+   "quota_ingresso_richiesta": {
+    "1": 4.02,
+    "X": 4.23,
+    "2": 2.74
+   },
+   "qualita": {
+    "xg_disponibile": true,
+    "assenze_alimentate": false,
+    "neopromossa": false,
+    "snapshot_rosa_recente": false,
+    "n_match_stagione": 9
+   },
+   "fiducia_suggerita": 6,
+   "flag": [
+    "ASSENZE NON ALIMENTATE"
+   ],
+   "candidato": false
+  },
+  {
+   "fixture_id": 1570425,
+   "lega": "Liga",
+   "pipeline": "xg",
+   "giornata": "Regular Season - 10",
+   "kickoff_locale": "2026-10-24T21:00",
+   "casa": "Ath Madrid",
+   "ospite": "La Coruna",
+   "p_modello": {
+    "1": 0.7263,
+    "X": 0.1759,
+    "2": 0.0978
+   },
+   "p_finale": {
+    "1": 0.7263,
+    "X": 0.1759,
+    "2": 0.0978
+   },
+   "quota_ingresso_richiesta": {
+    "1": 1.48,
+    "X": 7.94,
+    "2": 20.92
+   },
+   "qualita": {
+    "xg_disponibile": true,
+    "assenze_alimentate": false,
+    "neopromossa": true,
+    "snapshot_rosa_recente": false,
+    "n_match_stagione": 9
+   },
+   "fiducia_suggerita": 5,
+   "flag": [
+    "ASSENZE NON ALIMENTATE"
+   ],
+   "candidato": false
+  },
+  {
+   "fixture_id": 1575200,
    "lega": "Bundesliga",
    "pipeline": "xg",
    "giornata": "Regular Season - 7",
-   "kickoff_locale": "2026-10-23T20:30",
-   "casa": "Stuttgart",
-   "ospite": "M'gladbach",
+   "kickoff_locale": "2026-10-24T15:30",
+   "casa": "Mainz",
+   "ospite": "Werder Bremen",
    "p_modello": {
-    "1": 0.7466,
-    "X": 0.1571,
-    "2": 0.0963
+    "1": 0.5851,
+    "X": 0.212,
+    "2": 0.2029
    },
    "p_finale": {
-    "1": 0.7466,
-    "X": 0.1571,
-    "2": 0.0963
+    "1": 0.5851,
+    "X": 0.212,
+    "2": 0.2029
    },
    "quota_ingresso_richiesta": {
-    "1": 1.44,
-    "X": 9.34,
-    "2": 21.6
+    "1": 1.87,
+    "X": 6.17,
+    "2": 6.54
    },
    "qualita": {
     "xg_disponibile": true,
@@ -204,27 +526,212 @@
    "candidato": false
   },
   {
-   "fixture_id": 1552794,
+   "fixture_id": 1575199,
+   "lega": "Bundesliga",
+   "pipeline": "xg",
+   "giornata": "Regular Season - 7",
+   "kickoff_locale": "2026-10-24T15:30",
+   "casa": "Augsburg",
+   "ospite": "Union Berlin",
+   "p_modello": {
+    "1": 0.635,
+    "X": 0.201,
+    "2": 0.164
+   },
+   "p_finale": {
+    "1": 0.635,
+    "X": 0.201,
+    "2": 0.164
+   },
+   "quota_ingresso_richiesta": {
+    "1": 1.71,
+    "X": 6.62,
+    "2": 8.77
+   },
+   "qualita": {
+    "xg_disponibile": true,
+    "assenze_alimentate": false,
+    "neopromossa": false,
+    "snapshot_rosa_recente": false,
+    "n_match_stagione": 6
+   },
+   "fiducia_suggerita": 5,
+   "flag": [
+    "INIZIO STAGIONE",
+    "ASSENZE NON ALIMENTATE"
+   ],
+   "candidato": false
+  },
+  {
+   "fixture_id": 1575195,
+   "lega": "Bundesliga",
+   "pipeline": "xg",
+   "giornata": "Regular Season - 7",
+   "kickoff_locale": "2026-10-24T15:30",
+   "casa": "RB Leipzig",
+   "ospite": "Elversberg",
+   "p_modello": {
+    "1": 0.7548,
+    "X": 0.1483,
+    "2": 0.0968
+   },
+   "p_finale": {
+    "1": 0.7548,
+    "X": 0.1483,
+    "2": 0.0968
+   },
+   "quota_ingresso_richiesta": {
+    "1": 1.42,
+    "X": 10.17,
+    "2": 21.37
+   },
+   "qualita": {
+    "xg_disponibile": true,
+    "assenze_alimentate": false,
+    "neopromossa": true,
+    "snapshot_rosa_recente": false,
+    "n_match_stagione": 6
+   },
+   "fiducia_suggerita": 4,
+   "flag": [
+    "INIZIO STAGIONE",
+    "ASSENZE NON ALIMENTATE"
+   ],
+   "candidato": false
+  },
+  {
+   "fixture_id": 1575202,
+   "lega": "Bundesliga",
+   "pipeline": "xg",
+   "giornata": "Regular Season - 7",
+   "kickoff_locale": "2026-10-24T15:30",
+   "casa": "Paderborn",
+   "ospite": "Hamburg",
+   "p_modello": {
+    "1": 0.4088,
+    "X": 0.2736,
+    "2": 0.3176
+   },
+   "p_finale": {
+    "1": 0.4088,
+    "X": 0.2736,
+    "2": 0.3176
+   },
+   "quota_ingresso_richiesta": {
+    "1": 2.79,
+    "X": 4.47,
+    "2": 3.74
+   },
+   "qualita": {
+    "xg_disponibile": true,
+    "assenze_alimentate": false,
+    "neopromossa": true,
+    "snapshot_rosa_recente": false,
+    "n_match_stagione": 6
+   },
+   "fiducia_suggerita": 4,
+   "flag": [
+    "INIZIO STAGIONE",
+    "ASSENZE NON ALIMENTATE"
+   ],
+   "candidato": false
+  },
+  {
+   "fixture_id": 1575201,
+   "lega": "Bundesliga",
+   "pipeline": "xg",
+   "giornata": "Regular Season - 7",
+   "kickoff_locale": "2026-10-24T15:30",
+   "casa": "FC Koln",
+   "ospite": "Schalke 04",
+   "p_modello": {
+    "1": 0.5088,
+    "X": 0.2642,
+    "2": 0.2269
+   },
+   "p_finale": {
+    "1": 0.5088,
+    "X": 0.2642,
+    "2": 0.2269
+   },
+   "quota_ingresso_richiesta": {
+    "1": 2.18,
+    "X": 4.67,
+    "2": 5.65
+   },
+   "qualita": {
+    "xg_disponibile": true,
+    "assenze_alimentate": false,
+    "neopromossa": true,
+    "snapshot_rosa_recente": false,
+    "n_match_stagione": 6
+   },
+   "fiducia_suggerita": 4,
+   "flag": [
+    "INIZIO STAGIONE",
+    "ASSENZE NON ALIMENTATE"
+   ],
+   "candidato": false
+  },
+  {
+   "fixture_id": 1575194,
+   "lega": "Bundesliga",
+   "pipeline": "xg",
+   "giornata": "Regular Season - 7",
+   "kickoff_locale": "2026-10-24T18:30",
+   "casa": "Dortmund",
+   "ospite": "Ein Frankfurt",
+   "p_modello": {
+    "1": 0.6691,
+    "X": 0.1959,
+    "2": 0.135
+   },
+   "p_finale": {
+    "1": 0.6691,
+    "X": 0.1959,
+    "2": 0.135
+   },
+   "quota_ingresso_richiesta": {
+    "1": 1.62,
+    "X": 6.85,
+    "2": 11.76
+   },
+   "qualita": {
+    "xg_disponibile": true,
+    "assenze_alimentate": false,
+    "neopromossa": false,
+    "snapshot_rosa_recente": false,
+    "n_match_stagione": 6
+   },
+   "fiducia_suggerita": 5,
+   "flag": [
+    "INIZIO STAGIONE",
+    "ASSENZE NON ALIMENTATE"
+   ],
+   "candidato": false
+  },
+  {
+   "fixture_id": 1552795,
    "lega": "Ligue 1",
    "pipeline": "xg",
    "giornata": "Regular Season - 8",
-   "kickoff_locale": "2026-10-23T20:45",
-   "casa": "Brest",
-   "ospite": "Nice",
+   "kickoff_locale": "2026-10-24T20:45",
+   "casa": "Lens",
+   "ospite": "Paris FC",
    "p_modello": {
-    "1": 0.375,
-    "X": 0.276,
-    "2": 0.3489
+    "1": 0.513,
+    "X": 0.2455,
+    "2": 0.2414
    },
    "p_finale": {
-    "1": 0.375,
-    "X": 0.276,
-    "2": 0.3489
+    "1": 0.513,
+    "X": 0.2455,
+    "2": 0.2414
    },
    "quota_ingresso_richiesta": {
-    "1": 3.08,
-    "X": 4.42,
-    "2": 3.35
+    "1": 2.16,
+    "X": 5.12,
+    "2": 5.22
    },
    "qualita": {
     "xg_disponibile": true,
@@ -237,30 +744,32 @@
    "flag": [
     "ASSENZE NON ALIMENTATE"
    ],
-   "candidato": false
+   "candidato": true,
+   "esito_candidato": "1",
+   "stake_provvisorio": 2
   },
   {
-   "fixture_id": 1552198,
+   "fixture_id": 1552199,
    "lega": "Eredivisie",
    "pipeline": "ripiego",
    "giornata": "Regular Season - 10",
-   "kickoff_locale": "2026-10-23T20:00",
-   "casa": "Go Ahead Eagles",
-   "ospite": "Telstar",
+   "kickoff_locale": "2026-10-24T16:30",
+   "casa": "Utrecht",
+   "ospite": "Zwolle",
    "p_modello": {
-    "1": 0.5136,
-    "X": 0.2317,
-    "2": 0.2547
+    "1": 0.6109,
+    "X": 0.2143,
+    "2": 0.1749
    },
    "p_finale": {
-    "1": 0.5136,
-    "X": 0.2317,
-    "2": 0.2547
+    "1": 0.6109,
+    "X": 0.2143,
+    "2": 0.1749
    },
    "quota_ingresso_richiesta": {
-    "1": 2.16,
-    "X": 5.5,
-    "2": 4.89
+    "1": 1.78,
+    "X": 6.09,
+    "2": 8.01
    },
    "qualita": {
     "xg_disponibile": false,
@@ -276,27 +785,243 @@
    "candidato": false
   },
   {
-   "fixture_id": 1575526,
+   "fixture_id": 1552200,
+   "lega": "Eredivisie",
+   "pipeline": "ripiego",
+   "giornata": "Regular Season - 10",
+   "kickoff_locale": "2026-10-24T18:45",
+   "casa": "Willem II",
+   "ospite": "Cambuur",
+   "p_modello": {
+    "1": 0.3474,
+    "X": 0.2725,
+    "2": 0.3802
+   },
+   "p_finale": {
+    "1": 0.3474,
+    "X": 0.2725,
+    "2": 0.3802
+   },
+   "quota_ingresso_richiesta": {
+    "1": 3.36,
+    "X": 4.49,
+    "2": 3.03
+   },
+   "qualita": {
+    "xg_disponibile": false,
+    "assenze_alimentate": false,
+    "neopromossa": true,
+    "snapshot_rosa_recente": false,
+    "n_match_stagione": 9
+   },
+   "fiducia_suggerita": 4,
+   "flag": [
+    "ASSENZE NON ALIMENTATE"
+   ],
+   "candidato": false
+  },
+  {
+   "fixture_id": 1552201,
+   "lega": "Eredivisie",
+   "pipeline": "ripiego",
+   "giornata": "Regular Season - 10",
+   "kickoff_locale": "2026-10-24T21:00",
+   "casa": "Den Haag",
+   "ospite": "Heerenveen",
+   "p_modello": {
+    "1": 0.1576,
+    "X": 0.2205,
+    "2": 0.6219
+   },
+   "p_finale": {
+    "1": 0.1576,
+    "X": 0.2205,
+    "2": 0.6219
+   },
+   "quota_ingresso_richiesta": {
+    "1": 9.29,
+    "X": 5.87,
+    "2": 1.75
+   },
+   "qualita": {
+    "xg_disponibile": false,
+    "assenze_alimentate": false,
+    "neopromossa": true,
+    "snapshot_rosa_recente": false,
+    "n_match_stagione": 9
+   },
+   "fiducia_suggerita": 4,
+   "flag": [
+    "ASSENZE NON ALIMENTATE"
+   ],
+   "candidato": false
+  },
+  {
+   "fixture_id": 1575520,
    "lega": "Liga Portugal",
    "pipeline": "ripiego",
    "giornata": "Regular Season - 9",
-   "kickoff_locale": "2026-10-23T21:45",
-   "casa": "Guimaraes",
-   "ospite": "Maritimo",
+   "kickoff_locale": "2026-10-24T16:30",
+   "casa": "Estrela",
+   "ospite": "Casa Pia",
    "p_modello": {
-    "1": 0.4651,
-    "X": 0.3006,
-    "2": 0.2343
+    "1": 0.4708,
+    "X": 0.3059,
+    "2": 0.2233
    },
    "p_finale": {
-    "1": 0.4651,
-    "X": 0.3006,
-    "2": 0.2343
+    "1": 0.4708,
+    "X": 0.3059,
+    "2": 0.2233
    },
    "quota_ingresso_richiesta": {
-    "1": 2.41,
-    "X": 3.99,
-    "2": 5.43
+    "1": 2.38,
+    "X": 3.91,
+    "2": 5.77
+   },
+   "qualita": {
+    "xg_disponibile": false,
+    "assenze_alimentate": false,
+    "neopromossa": false,
+    "snapshot_rosa_recente": false,
+    "n_match_stagione": 8
+   },
+   "fiducia_suggerita": 5,
+   "flag": [
+    "ASSENZE NON ALIMENTATE"
+   ],
+   "candidato": false
+  },
+  {
+   "fixture_id": 1575518,
+   "lega": "Liga Portugal",
+   "pipeline": "ripiego",
+   "giornata": "Regular Season - 9",
+   "kickoff_locale": "2026-10-24T19:00",
+   "casa": "Alverca",
+   "ospite": "Arouca",
+   "p_modello": {
+    "1": 0.3407,
+    "X": 0.3074,
+    "2": 0.3519
+   },
+   "p_finale": {
+    "1": 0.3407,
+    "X": 0.3074,
+    "2": 0.3519
+   },
+   "quota_ingresso_richiesta": {
+    "1": 3.44,
+    "X": 3.89,
+    "2": 3.31
+   },
+   "qualita": {
+    "xg_disponibile": false,
+    "assenze_alimentate": false,
+    "neopromossa": false,
+    "snapshot_rosa_recente": false,
+    "n_match_stagione": 8
+   },
+   "fiducia_suggerita": 5,
+   "flag": [
+    "ASSENZE NON ALIMENTATE"
+   ],
+   "candidato": false
+  },
+  {
+   "fixture_id": 1575521,
+   "lega": "Liga Portugal",
+   "pipeline": "ripiego",
+   "giornata": "Regular Season - 9",
+   "kickoff_locale": "2026-10-24T21:30",
+   "casa": "Gil Vicente",
+   "ospite": "Porto",
+   "p_modello": {
+    "1": 0.1634,
+    "X": 0.301,
+    "2": 0.5356
+   },
+   "p_finale": {
+    "1": 0.1634,
+    "X": 0.301,
+    "2": 0.5356
+   },
+   "quota_ingresso_richiesta": {
+    "1": 8.82,
+    "X": 3.98,
+    "2": 2.06
+   },
+   "qualita": {
+    "xg_disponibile": false,
+    "assenze_alimentate": false,
+    "neopromossa": false,
+    "snapshot_rosa_recente": false,
+    "n_match_stagione": 8
+   },
+   "fiducia_suggerita": 5,
+   "flag": [
+    "ASSENZE NON ALIMENTATE"
+   ],
+   "candidato": false
+  },
+  {
+   "fixture_id": 1558653,
+   "lega": "Jupiler",
+   "pipeline": "ripiego",
+   "giornata": "Regular Season - 9",
+   "kickoff_locale": "2026-10-24T16:00",
+   "casa": "Antwerp",
+   "ospite": "Charleroi",
+   "p_modello": {
+    "1": 0.279,
+    "X": 0.2941,
+    "2": 0.4269
+   },
+   "p_finale": {
+    "1": 0.279,
+    "X": 0.2941,
+    "2": 0.4269
+   },
+   "quota_ingresso_richiesta": {
+    "1": 4.37,
+    "X": 4.1,
+    "2": 2.65
+   },
+   "qualita": {
+    "xg_disponibile": false,
+    "assenze_alimentate": false,
+    "neopromossa": false,
+    "snapshot_rosa_recente": false,
+    "n_match_stagione": 8
+   },
+   "fiducia_suggerita": 5,
+   "flag": [
+    "ASSENZE NON ALIMENTATE"
+   ],
+   "candidato": false
+  },
+  {
+   "fixture_id": 1558658,
+   "lega": "Jupiler",
+   "pipeline": "ripiego",
+   "giornata": "Regular Season - 9",
+   "kickoff_locale": "2026-10-24T18:15",
+   "casa": "Oud-Heverlee Leuven",
+   "ospite": "Lommel SK",
+   "p_modello": {
+    "1": 0.4002,
+    "X": 0.3279,
+    "2": 0.2719
+   },
+   "p_finale": {
+    "1": 0.4002,
+    "X": 0.3279,
+    "2": 0.2719
+   },
+   "quota_ingresso_richiesta": {
+    "1": 2.86,
+    "X": 3.6,
+    "2": 4.51
    },
    "qualita": {
     "xg_disponibile": false,
@@ -312,27 +1037,27 @@
    "candidato": false
   },
   {
-   "fixture_id": 1558657,
+   "fixture_id": 1558661,
    "lega": "Jupiler",
    "pipeline": "ripiego",
    "giornata": "Regular Season - 9",
-   "kickoff_locale": "2026-10-23T20:45",
-   "casa": "Kortrijk",
-   "ospite": "Mechelen",
+   "kickoff_locale": "2026-10-24T20:45",
+   "casa": "Westerlo",
+   "ospite": "Beveren",
    "p_modello": {
-    "1": 0.3564,
-    "X": 0.3142,
-    "2": 0.3294
+    "1": 0.648,
+    "X": 0.2164,
+    "2": 0.1357
    },
    "p_finale": {
-    "1": 0.3564,
-    "X": 0.3142,
-    "2": 0.3294
+    "1": 0.648,
+    "X": 0.2164,
+    "2": 0.1357
    },
    "quota_ingresso_richiesta": {
-    "1": 3.26,
-    "X": 3.79,
-    "2": 3.58
+    "1": 1.67,
+    "X": 6.01,
+    "2": 11.67
    },
    "qualita": {
     "xg_disponibile": false,
@@ -342,6 +1067,42 @@
     "n_match_stagione": 8
    },
    "fiducia_suggerita": 4,
+   "flag": [
+    "ASSENZE NON ALIMENTATE"
+   ],
+   "candidato": false
+  },
+  {
+   "fixture_id": 1558659,
+   "lega": "Jupiler",
+   "pipeline": "ripiego",
+   "giornata": "Regular Season - 9",
+   "kickoff_locale": "2026-10-24T20:45",
+   "casa": "RAAL La Louviere",
+   "ospite": "Waregem",
+   "p_modello": {
+    "1": 0.3073,
+    "X": 0.3021,
+    "2": 0.3906
+   },
+   "p_finale": {
+    "1": 0.3073,
+    "X": 0.3021,
+    "2": 0.3906
+   },
+   "quota_ingresso_richiesta": {
+    "1": 3.89,
+    "X": 3.97,
+    "2": 2.94
+   },
+   "qualita": {
+    "xg_disponibile": false,
+    "assenze_alimentate": false,
+    "neopromossa": false,
+    "snapshot_rosa_recente": false,
+    "n_match_stagione": 8
+   },
+   "fiducia_suggerita": 5,
    "flag": [
     "ASSENZE NON ALIMENTATE"
    ],
@@ -349,28 +1110,88 @@
   }
  ],
  "candidati": [
-  1550165
+  1552795
  ],
  "partite_senza_modello": [
   {
-   "fixture_id": 1493202,
-   "lega": "Argentina Liga Profesional",
-   "giornata": "Clausura - 14",
-   "kickoff_locale": "2026-10-23T23:00",
-   "casa": "Gimnasia L.P.",
-   "ospite": "Sarmiento Junin",
+   "fixture_id": 1492424,
+   "lega": "Brasile Serie A",
+   "giornata": "Regular Season - 32",
+   "kickoff_locale": "2026-10-24T21:30",
+   "casa": "Internacional",
+   "ospite": "Botafogo RJ",
    "misurabile": "solo 1X2",
    "flag": [
     "MODELLO NON DISPONIBILE"
    ]
   },
   {
-   "fixture_id": 1493203,
+   "fixture_id": 1492429,
+   "lega": "Brasile Serie A",
+   "giornata": "Regular Season - 32",
+   "kickoff_locale": "2026-10-24T21:30",
+   "casa": "Vitoria",
+   "ospite": "Athletico-PR",
+   "misurabile": "solo 1X2",
+   "flag": [
+    "MODELLO NON DISPONIBILE"
+   ]
+  },
+  {
+   "fixture_id": 1492425,
+   "lega": "Brasile Serie A",
+   "giornata": "Regular Season - 32",
+   "kickoff_locale": "2026-10-24T21:30",
+   "casa": "Mirassol",
+   "ospite": "Sao Paulo",
+   "misurabile": "solo 1X2",
+   "flag": [
+    "MODELLO NON DISPONIBILE"
+   ]
+  },
+  {
+   "fixture_id": 1492426,
+   "lega": "Brasile Serie A",
+   "giornata": "Regular Season - 32",
+   "kickoff_locale": "2026-10-24T23:30",
+   "casa": "Palmeiras",
+   "ospite": "Bragantino",
+   "misurabile": "solo 1X2",
+   "flag": [
+    "MODELLO NON DISPONIBILE"
+   ]
+  },
+  {
+   "fixture_id": 1492428,
+   "lega": "Brasile Serie A",
+   "giornata": "Regular Season - 32",
+   "kickoff_locale": "2026-10-24T23:30",
+   "casa": "Vasco",
+   "ospite": "Corinthians",
+   "misurabile": "solo 1X2",
+   "flag": [
+    "MODELLO NON DISPONIBILE"
+   ]
+  },
+  {
+   "fixture_id": 1493199,
    "lega": "Argentina Liga Profesional",
    "giornata": "Clausura - 14",
-   "kickoff_locale": "2026-10-23T23:30",
-   "casa": "Gimnasia Mendoza",
-   "ospite": "Platense",
+   "kickoff_locale": "2026-10-24T19:45",
+   "casa": "Banfield",
+   "ospite": "Lanus",
+   "misurabile": "solo 1X2",
+   "flag": [
+    "MODELLO NON DISPONIBILE"
+   ]
+  },
+  {
+   "fixture_id": 1493209,
+   "lega": "Argentina Liga Profesional",
+   "giornata": "Clausura - 14",
+   "kickoff_locale": "2026-10-24T22:00",
+   "casa": "Talleres Cordoba",
+   "ospite": "Defensa y Justicia",
    "misurabile": "solo 1X2",
    "flag": [
     "MODELLO NON DISPONIBILE"
@@ -378,15 +1199,14 @@
   }
  ],
  "diagnostica": {
-  "partite_totali": 8,
+  "partite_totali": 29,
   "candidati": 1,
-  "scartati_soglia": 5,
-  "scartati_quota_max": 2,
+  "scartati_soglia": 20,
+  "scartati_quota_max": 3,
   "scartati_dati": 0,
-  "scartati_pipeline": 0,
-  "scartati_fiducia": 0,
-  "scartati_stake": 0,
+  "scartati_pipeline": 2,
+  "scartati_fiducia": 1,
+  "scartati_stake": 2,
   "escluse_dal_cap": 0
- },
- "passata_2_il": "2026-10-23T17:37:48Z"
+ }
 }
