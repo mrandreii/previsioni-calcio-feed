@@ -742,7 +742,8 @@
    },
    "fiducia_suggerita": 6,
    "flag": [
-    "ASSENZE NON ALIMENTATE"
+    "ASSENZE NON ALIMENTATE",
+    "LINE MOVEMENT ↑"
    ],
    "candidato": true,
    "esito_candidato": "1",
@@ -1208,5 +1209,6 @@
   "scartati_fiducia": 1,
   "scartati_stake": 2,
   "escluse_dal_cap": 0
- }
+ },
+ "passata_2_il": "2026-10-24T16:23:35Z"
 }
