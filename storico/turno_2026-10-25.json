@@ -160,11 +160,12 @@
    },
    "fiducia_suggerita": 6,
    "flag": [
-    "ASSENZE NON ALIMENTATE"
+    "ASSENZE NON ALIMENTATE",
+    "LINE MOVEMENT ↓"
    ],
    "candidato": true,
    "esito_candidato": "1",
-   "stake_provvisorio": 2
+   "stake_provvisorio": 1
   },
   {
    "fixture_id": 1557442,
@@ -740,11 +741,13 @@
    },
    "fiducia_suggerita": 6,
    "flag": [
-    "ASSENZE NON ALIMENTATE"
+    "ASSENZE NON ALIMENTATE",
+    "LINE MOVEMENT ↓"
    ],
-   "candidato": true,
+   "candidato": false,
    "esito_candidato": "1",
-   "stake_provvisorio": 1
+   "stake_provvisorio": 0,
+   "declassato_da": "line movement"
   },
   {
    "fixture_id": 1552798,
@@ -1324,8 +1327,7 @@
   }
  ],
  "candidati": [
-  1557441,
-  1552796
+  1557441
  ],
  "partite_senza_modello": [
   {
@@ -1375,5 +1377,6 @@
   "scartati_fiducia": 0,
   "scartati_stake": 0,
   "escluse_dal_cap": 0
- }
+ },
+ "passata_2_il": "2026-10-25T16:55:46Z"
 }
