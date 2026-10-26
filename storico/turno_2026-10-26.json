@@ -1,0 +1,206 @@
+{
+ "schema_version": "1.0",
+ "generato_il": "2026-10-26T11:05:48Z",
+ "giorno_operativo": "2026-10-26",
+ "stato": "ok",
+ "freschezza": {
+  "football_data": {
+   "ultimo_risultato": "2026-10-21",
+   "giorni_fa": 5,
+   "record": 571,
+   "partite_senza_risultato": 0,
+   "ok": true
+  },
+  "understat_xg": {
+   "ultima_stagione": "2526",
+   "record": 60,
+   "ok": true
+  },
+  "api_football_odds": {
+   "chiamate_ok": 15,
+   "fixture_con_quote": 3,
+   "fixture_totali": 3,
+   "ok": true
+  },
+  "transfermarkt": {
+   "stagione_valori": "2526",
+   "record": 1170,
+   "foto_del": "2026-07-09",
+   "ok": true
+  }
+ },
+ "modello": {
+  "commit": "bf7bdae",
+  "logloss_gap_test": 0.0135,
+  "w_shrinkage": null,
+  "shrinkage": {
+   "testato": true,
+   "w_stimato": 0.0,
+   "adottato": false,
+   "motivo": "non batte il mercato fuori campione (analisi_2026_09/shrinkage_report.md)"
+  },
+  "gate_superato": false
+ },
+ "regole": {
+  "criterio": "edge_pp",
+  "soglia_pp": 0.05,
+  "quota_max": 3.0,
+  "pipeline_ammesse": [
+   "xg"
+  ],
+  "stake_max_pick": 2,
+  "esposizione_max_giorno": 4,
+  "tetti_validi_fino_a": "decisione H8 (150 pick di sistema con CLV misurato)",
+  "penalita_rosa_non_recente": false,
+  "nota_fiducia": "fiducia_suggerita e' gia' calcolata con queste regole: non va ricalcolata dai flag. Con penalita_rosa_non_recente false, snapshot_rosa_recente false non toglie punti.",
+  "modalita": "shadow"
+ },
+ "partite": [
+  {
+   "fixture_id": 1570431,
+   "lega": "Liga",
+   "pipeline": "xg",
+   "giornata": "Regular Season - 10",
+   "kickoff_locale": "2026-10-26T21:00",
+   "casa": "Sevilla",
+   "ospite": "Osasuna",
+   "p_modello": {
+    "1": 0.545,
+    "X": 0.251,
+    "2": 0.204
+   },
+   "p_finale": {
+    "1": 0.545,
+    "X": 0.251,
+    "2": 0.204
+   },
+   "quota_ingresso_richiesta": {
+    "1": 2.02,
+    "X": 4.98,
+    "2": 6.49
+   },
+   "qualita": {
+    "xg_disponibile": true,
+    "assenze_alimentate": false,
+    "neopromossa": false,
+    "snapshot_rosa_recente": false,
+    "n_match_stagione": 9
+   },
+   "fiducia_suggerita": 6,
+   "flag": [
+    "ASSENZE NON ALIMENTATE"
+   ],
+   "candidato": false
+  },
+  {
+   "fixture_id": 1552800,
+   "lega": "Ligue 1",
+   "pipeline": "xg",
+   "giornata": "Regular Season - 8",
+   "kickoff_locale": "2026-10-26T20:30",
+   "casa": "Paris SG",
+   "ospite": "Lyon",
+   "p_modello": {
+    "1": 0.6241,
+    "X": 0.2208,
+    "2": 0.1552
+   },
+   "p_finale": {
+    "1": 0.6241,
+    "X": 0.2208,
+    "2": 0.1552
+   },
+   "quota_ingresso_richiesta": {
+    "1": 1.74,
+    "X": 5.85,
+    "2": 9.51
+   },
+   "qualita": {
+    "xg_disponibile": true,
+    "assenze_alimentate": false,
+    "neopromossa": false,
+    "snapshot_rosa_recente": false,
+    "n_match_stagione": 7
+   },
+   "fiducia_suggerita": 6,
+   "flag": [
+    "ASSENZE NON ALIMENTATE"
+   ],
+   "candidato": false
+  },
+  {
+   "fixture_id": 1575524,
+   "lega": "Liga Portugal",
+   "pipeline": "ripiego",
+   "giornata": "Regular Season - 9",
+   "kickoff_locale": "2026-10-26T19:45",
+   "casa": "Santa Clara",
+   "ospite": "Benfica",
+   "p_modello": {
+    "1": 0.1442,
+    "X": 0.2856,
+    "2": 0.5702
+   },
+   "p_finale": {
+    "1": 0.1442,
+    "X": 0.2856,
+    "2": 0.5702
+   },
+   "quota_ingresso_richiesta": {
+    "1": 10.62,
+    "X": 4.24,
+    "2": 1.92
+   },
+   "qualita": {
+    "xg_disponibile": false,
+    "assenze_alimentate": false,
+    "neopromossa": false,
+    "snapshot_rosa_recente": false,
+    "n_match_stagione": 8
+   },
+   "fiducia_suggerita": 5,
+   "flag": [
+    "ASSENZE NON ALIMENTATE"
+   ],
+   "candidato": false
+  }
+ ],
+ "candidati": [],
+ "partite_senza_modello": [
+  {
+   "fixture_id": 1492421,
+   "lega": "Brasile Serie A",
+   "giornata": "Regular Season - 32",
+   "kickoff_locale": "2026-10-26T23:30",
+   "casa": "Coritiba",
+   "ospite": "Gremio",
+   "misurabile": "solo 1X2",
+   "flag": [
+    "MODELLO NON DISPONIBILE"
+   ]
+  },
+  {
+   "fixture_id": 1493211,
+   "lega": "Argentina Liga Profesional",
+   "giornata": "Clausura - 14",
+   "kickoff_locale": "2026-10-26T23:00",
+   "casa": "Union de Santa Fe",
+   "ospite": "Estudiantes L.P.",
+   "misurabile": "solo 1X2",
+   "flag": [
+    "MODELLO NON DISPONIBILE"
+   ]
+  }
+ ],
+ "diagnostica": {
+  "partite_totali": 3,
+  "candidati": 0,
+  "scartati_soglia": 2,
+  "scartati_quota_max": 1,
+  "scartati_dati": 0,
+  "scartati_pipeline": 0,
+  "scartati_fiducia": 0,
+  "scartati_stake": 0,
+  "escluse_dal_cap": 0
+ }
+}
