@@ -1,0 +1,769 @@
+{
+ "schema_version": "1.1",
+ "generato_il": "2026-10-28T05:15:58Z",
+ "giorno_operativo": "2026-10-28",
+ "stato": "ok",
+ "freschezza": {
+  "stagione": {
+   "calendario": "2627",
+   "modello": "2627",
+   "ok": true
+  },
+  "football_data": {
+   "ultimo_risultato": "2026-10-26",
+   "giorni_fa": 2,
+   "record": 645,
+   "partite_senza_risultato": 0,
+   "ok": true
+  },
+  "understat_xg": {
+   "ultima_stagione": "2526",
+   "stagione_richiesta": "2526",
+   "record": 60,
+   "uso": "solo stagioni concluse: la stagione in corso entra nel modello coi gol, non con gli xG",
+   "ok": true
+  },
+  "api_football_odds": {
+   "chiamate_ok": 34,
+   "fixture_con_quote": 5,
+   "fixture_totali": 5,
+   "ok": true
+  },
+  "api_football_injuries": {
+   "chiamate_ok": 5,
+   "chiamate_fallite": 0,
+   "righe_salvate": 52,
+   "fixture_con_assenze": 5,
+   "usate_dal_modello": false,
+   "ok": true
+  },
+  "transfermarkt": {
+   "stagione_valori": "2526",
+   "stagione_richiesta": "2526",
+   "record": 1170,
+   "foto_del": "2026-07-09",
+   "foto_giorni": 111,
+   "uso": "prior dai valori di rosa della stagione precedente, per scelta: la data della foto non cambia le probabilita' (flag ROSA NON AGGIORNATA sulle partite)",
+   "ok": true
+  }
+ },
+ "modello": {
+  "commit": "61ced5c",
+  "logloss_gap_test": 0.0135,
+  "w_shrinkage": null,
+  "shrinkage": {
+   "testato": true,
+   "w_stimato": 0.0,
+   "adottato": false,
+   "motivo": "non batte il mercato fuori campione (analisi_2026_09/shrinkage_report.md)"
+  },
+  "gate_superato": false
+ },
+ "regole": {
+  "versione_regole": "2.1",
+  "in_vigore_dal": "2026-10-27",
+  "criterio": "edge_pp",
+  "sconto_modello": 1.0,
+  "sconto_analyst": 0.97,
+  "soglia_pp": 0.03,
+  "formula_quota_ingresso": "1 / (p_modello x sconto_modello - soglia_pp), per eccesso al centesimo",
+  "quota_max": 3.0,
+  "pipeline_ammesse": [
+   "xg"
+  ],
+  "stake_fisso": 1,
+  "stake_max_pick": 1,
+  "esposizione_max_giorno": 3,
+  "combo_ammesse": false,
+  "mercati_misurabili": [
+   "1X2",
+   "DC",
+   "OU 2.5",
+   "AH linea principale"
+  ],
+  "revisione": {
+   "dopo_pick_misurabili": 50,
+   "conteggio_dal": "2026-10-27",
+   "sotto_meno_1_pp": "si torna alla v2.0: sconto 0,93 e soglia 5 punti",
+   "fra_meno_1_e_piu_1_pp": "inconcludente: altre 50 pick con le stesse regole",
+   "sopra_piu_1_pp": "si tiene la v2.1 e torna lo stake per fasce, coi tetti provvisori di H8 (2/10 e 4/10)"
+  },
+  "tetti_validi_fino_a": "decisione H8 (150 pick di sistema con CLV misurato): mai sopra 2/10 e 4/10 prima",
+  "penalita_rosa_non_recente": false,
+  "nota_fiducia": "fiducia_suggerita e' gia' calcolata con queste regole: non va ricalcolata dai flag. Con penalita_rosa_non_recente false, snapshot_rosa_recente false non toglie punti. Con stake_fisso i flag non riducono lo stake: il veto resta fiducia - 3 < stake.",
+  "significato_pipeline": {
+   "xg": "forze costruite sugli xG Understat delle stagioni concluse, piu' il prior dai valori di rosa; la stagione in corso entra coi gol",
+   "ripiego": "forze dai tiri in porta, senza xG e senza prior (Eredivisie, Portogallo, Belgio)"
+  },
+  "nota_assenze": "l'elenco degli assenti e' per il controllo a mano: il modello non lo usa (assenze_alimentate false)",
+  "modalita": "shadow"
+ },
+ "partite": [
+  {
+   "fixture_id": 1550167,
+   "lega": "Serie A",
+   "pipeline": "xg",
+   "giornata": "Regular Season - 9",
+   "kickoff_locale": "2026-10-28T18:30",
+   "casa": "Milan",
+   "ospite": "Bologna",
+   "p_modello": {
+    "1": 0.5411,
+    "X": 0.2597,
+    "2": 0.1992
+   },
+   "p_finale": {
+    "1": 0.5411,
+    "X": 0.2597,
+    "2": 0.1992
+   },
+   "quota_ingresso_richiesta": {
+    "1": 1.96,
+    "X": 4.36,
+    "2": 5.92
+   },
+   "qualita": {
+    "xg_disponibile": true,
+    "xg_stagione_corrente": false,
+    "assenze_alimentate": false,
+    "assenze_elencate": true,
+    "neopromossa": false,
+    "snapshot_rosa_recente": false,
+    "n_match_stagione": 8
+   },
+   "fiducia_suggerita": 6,
+   "flag": [
+    "ASSENZE NON ALIMENTATE",
+    "ROSA NON AGGIORNATA"
+   ],
+   "assenze": {
+    "casa": [
+     {
+      "giocatore": "S. Chukwueze",
+      "stato": "fuori",
+      "motivo": "Hip Injury"
+     },
+     {
+      "giocatore": "M. Gabbia",
+      "stato": "fuori",
+      "motivo": "Thigh Injury"
+     },
+     {
+      "giocatore": "A. Saelemaekers",
+      "stato": "fuori",
+      "motivo": "Ankle Injury"
+     },
+     {
+      "giocatore": "M. Gila",
+      "stato": "in dubbio",
+      "motivo": "Ankle Injury"
+     },
+     {
+      "giocatore": "R. Loftus-Cheek",
+      "stato": "in dubbio",
+      "motivo": "Thigh Injury"
+     },
+     {
+      "giocatore": "D. Moreira",
+      "stato": "in dubbio",
+      "motivo": "Thigh Injury"
+     },
+     {
+      "giocatore": "A. Rabiot",
+      "stato": "in dubbio",
+      "motivo": "Calf Injury"
+     }
+    ],
+    "ospite": [
+     {
+      "giocatore": "E. Holm",
+      "stato": "fuori",
+      "motivo": "Thigh Injury"
+     },
+     {
+      "giocatore": "R. Orsolini",
+      "stato": "fuori",
+      "motivo": "Thigh Injury"
+     },
+     {
+      "giocatore": "R. Piccoli",
+      "stato": "fuori",
+      "motivo": "Hamstring Injury"
+     }
+    ]
+   },
+   "candidato": false
+  },
+  {
+   "fixture_id": 1550176,
+   "lega": "Serie A",
+   "pipeline": "xg",
+   "giornata": "Regular Season - 9",
+   "kickoff_locale": "2026-10-28T18:30",
+   "casa": "Venezia",
+   "ospite": "Inter",
+   "p_modello": {
+    "1": 0.0578,
+    "X": 0.1258,
+    "2": 0.8164
+   },
+   "p_finale": {
+    "1": 0.0578,
+    "X": 0.1258,
+    "2": 0.8164
+   },
+   "quota_ingresso_richiesta": {
+    "1": 35.98,
+    "X": 10.44,
+    "2": 1.28
+   },
+   "qualita": {
+    "xg_disponibile": true,
+    "xg_stagione_corrente": false,
+    "assenze_alimentate": false,
+    "assenze_elencate": true,
+    "neopromossa": true,
+    "snapshot_rosa_recente": false,
+    "n_match_stagione": 8
+   },
+   "fiducia_suggerita": 5,
+   "flag": [
+    "ASSENZE NON ALIMENTATE",
+    "ROSA NON AGGIORNATA"
+   ],
+   "assenze": {
+    "casa": [
+     {
+      "giocatore": "A. Adorante",
+      "stato": "fuori",
+      "motivo": "Hernia"
+     },
+     {
+      "giocatore": "B. Franjic",
+      "stato": "fuori",
+      "motivo": "Shoulder Injury"
+     },
+     {
+      "giocatore": "M. Sverko",
+      "stato": "fuori",
+      "motivo": "Hip Injury"
+     },
+     {
+      "giocatore": "T. Correia",
+      "stato": "in dubbio",
+      "motivo": "Thigh Injury"
+     }
+    ],
+    "ospite": [
+     {
+      "giocatore": "C. Jones",
+      "stato": "fuori",
+      "motivo": "Thigh Injury"
+     },
+     {
+      "giocatore": "Luis Henrique",
+      "stato": "fuori",
+      "motivo": "Thigh Injury"
+     },
+     {
+      "giocatore": "L. Martinez",
+      "stato": "fuori",
+      "motivo": "Thigh Injury"
+     },
+     {
+      "giocatore": "B. Pavard",
+      "stato": "fuori",
+      "motivo": "Thigh Injury"
+     },
+     {
+      "giocatore": "J. Stones",
+      "stato": "fuori",
+      "motivo": "Injury"
+     }
+    ]
+   },
+   "candidato": true,
+   "esito_candidato": "2",
+   "misurabile_clv": true,
+   "stake_provvisorio": 1
+  },
+  {
+   "fixture_id": 1550173,
+   "lega": "Serie A",
+   "pipeline": "xg",
+   "giornata": "Regular Season - 9",
+   "kickoff_locale": "2026-10-28T18:30",
+   "casa": "Parma",
+   "ospite": "Udinese",
+   "p_modello": {
+    "1": 0.3469,
+    "X": 0.2875,
+    "2": 0.3656
+   },
+   "p_finale": {
+    "1": 0.3469,
+    "X": 0.2875,
+    "2": 0.3656
+   },
+   "quota_ingresso_richiesta": {
+    "1": 3.16,
+    "X": 3.89,
+    "2": 2.98
+   },
+   "qualita": {
+    "xg_disponibile": true,
+    "xg_stagione_corrente": false,
+    "assenze_alimentate": false,
+    "assenze_elencate": true,
+    "neopromossa": false,
+    "snapshot_rosa_recente": false,
+    "n_match_stagione": 8
+   },
+   "fiducia_suggerita": 6,
+   "flag": [
+    "ASSENZE NON ALIMENTATE",
+    "ROSA NON AGGIORNATA"
+   ],
+   "assenze": {
+    "casa": [
+     {
+      "giocatore": "P. Almqvist",
+      "stato": "fuori",
+      "motivo": "Calf Injury"
+     },
+     {
+      "giocatore": "N. Elphege",
+      "stato": "fuori",
+      "motivo": "Illness"
+     },
+     {
+      "giocatore": "H. Nicolussi Caviglia",
+      "stato": "fuori",
+      "motivo": "Thigh Injury"
+     },
+     {
+      "giocatore": "L. Valenti",
+      "stato": "fuori",
+      "motivo": "Coach's decision"
+     }
+    ],
+    "ospite": [
+     {
+      "giocatore": "D. Alaba",
+      "stato": "fuori",
+      "motivo": "Calf Injury"
+     },
+     {
+      "giocatore": "V. Bayo",
+      "stato": "fuori",
+      "motivo": "Thigh Injury"
+     },
+     {
+      "giocatore": "I. Gueye",
+      "stato": "fuori",
+      "motivo": "Ankle Injury"
+     },
+     {
+      "giocatore": "O. Solet",
+      "stato": "in dubbio",
+      "motivo": "Muscle Injury"
+     },
+     {
+      "giocatore": "A. Zanoli",
+      "stato": "in dubbio",
+      "motivo": "Muscle Injury"
+     }
+    ]
+   },
+   "candidato": false
+  },
+  {
+   "fixture_id": 1550171,
+   "lega": "Serie A",
+   "pipeline": "xg",
+   "giornata": "Regular Season - 9",
+   "kickoff_locale": "2026-10-28T20:45",
+   "casa": "Genoa",
+   "ospite": "Juventus",
+   "p_modello": {
+    "1": 0.1652,
+    "X": 0.2515,
+    "2": 0.5833
+   },
+   "p_finale": {
+    "1": 0.1652,
+    "X": 0.2515,
+    "2": 0.5833
+   },
+   "quota_ingresso_richiesta": {
+    "1": 7.4,
+    "X": 4.52,
+    "2": 1.81
+   },
+   "qualita": {
+    "xg_disponibile": true,
+    "xg_stagione_corrente": false,
+    "assenze_alimentate": false,
+    "assenze_elencate": true,
+    "neopromossa": false,
+    "snapshot_rosa_recente": false,
+    "n_match_stagione": 8
+   },
+   "fiducia_suggerita": 6,
+   "flag": [
+    "ASSENZE NON ALIMENTATE",
+    "ROSA NON AGGIORNATA"
+   ],
+   "assenze": {
+    "casa": [
+     {
+      "giocatore": "E. Havel",
+      "stato": "fuori",
+      "motivo": "Ankle Injury"
+     },
+     {
+      "giocatore": "L. Venturino",
+      "stato": "fuori",
+      "motivo": "Knee Injury"
+     },
+     {
+      "giocatore": "K. Ehizibue",
+      "stato": "in dubbio",
+      "motivo": "Muscle Injury"
+     },
+     {
+      "giocatore": "D. Sow",
+      "stato": "in dubbio",
+      "motivo": "Thigh Injury"
+     },
+     {
+      "giocatore": "S. Wiafe",
+      "stato": "in dubbio",
+      "motivo": "Muscle Injury"
+     }
+    ],
+    "ospite": [
+     {
+      "giocatore": "Z. Celik",
+      "stato": "fuori",
+      "motivo": "Muscle Injury"
+     },
+     {
+      "giocatore": "F. Conceicao",
+      "stato": "fuori",
+      "motivo": "Shoulder Injury"
+     },
+     {
+      "giocatore": "J. Ekhator",
+      "stato": "fuori",
+      "motivo": "Muscle Injury"
+     },
+     {
+      "giocatore": "N. Gonzalez",
+      "stato": "fuori",
+      "motivo": "Calf Injury"
+     },
+     {
+      "giocatore": "K. Grabara",
+      "stato": "fuori",
+      "motivo": "Knee Injury"
+     },
+     {
+      "giocatore": "M. Locatelli",
+      "stato": "fuori",
+      "motivo": "Knee Injury"
+     },
+     {
+      "giocatore": "A. Milik",
+      "stato": "fuori",
+      "motivo": "Inactive"
+     },
+     {
+      "giocatore": "K. Thuram",
+      "stato": "fuori",
+      "motivo": "Knee Injury"
+     },
+     {
+      "giocatore": "K. Yildiz",
+      "stato": "fuori",
+      "motivo": "Foot Injury"
+     }
+    ]
+   },
+   "candidato": false
+  },
+  {
+   "fixture_id": 1550172,
+   "lega": "Serie A",
+   "pipeline": "xg",
+   "giornata": "Regular Season - 9",
+   "kickoff_locale": "2026-10-28T20:45",
+   "casa": "Monza",
+   "ospite": "Napoli",
+   "p_modello": {
+    "1": 0.1308,
+    "X": 0.1965,
+    "2": 0.6726
+   },
+   "p_finale": {
+    "1": 0.1308,
+    "X": 0.1965,
+    "2": 0.6726
+   },
+   "quota_ingresso_richiesta": {
+    "1": 9.93,
+    "X": 6.01,
+    "2": 1.56
+   },
+   "qualita": {
+    "xg_disponibile": true,
+    "xg_stagione_corrente": false,
+    "assenze_alimentate": false,
+    "assenze_elencate": true,
+    "neopromossa": true,
+    "snapshot_rosa_recente": false,
+    "n_match_stagione": 8
+   },
+   "fiducia_suggerita": 5,
+   "flag": [
+    "ASSENZE NON ALIMENTATE",
+    "ROSA NON AGGIORNATA"
+   ],
+   "assenze": {
+    "casa": [
+     {
+      "giocatore": "M. Folorunsho",
+      "stato": "fuori",
+      "motivo": "Coach's decision"
+     },
+     {
+      "giocatore": "Y. Maye",
+      "stato": "fuori",
+      "motivo": "Muscle Injury"
+     },
+     {
+      "giocatore": "M. Pessina",
+      "stato": "fuori",
+      "motivo": "Knee Injury"
+     },
+     {
+      "giocatore": "J. Ziolkowski",
+      "stato": "fuori",
+      "motivo": "Foot Injury"
+     }
+    ],
+    "ospite": [
+     {
+      "giocatore": "Alisson Santos",
+      "stato": "fuori",
+      "motivo": "Muscle Injury"
+     },
+     {
+      "giocatore": "B. Badiashile",
+      "stato": "fuori",
+      "motivo": "Injury"
+     },
+     {
+      "giocatore": "A. Buongiorno",
+      "stato": "fuori",
+      "motivo": "Knee Injury"
+     },
+     {
+      "giocatore": "David Neres",
+      "stato": "fuori",
+      "motivo": "Thigh Injury"
+     },
+     {
+      "giocatore": "C. Favasuli",
+      "stato": "fuori",
+      "motivo": "Thigh Injury"
+     },
+     {
+      "giocatore": "L. Spinazzola",
+      "stato": "fuori",
+      "motivo": "Thigh Injury"
+     }
+    ]
+   },
+   "candidato": true,
+   "esito_candidato": "2",
+   "misurabile_clv": true,
+   "stake_provvisorio": 1
+  }
+ ],
+ "candidati": [
+  1550176,
+  1550172
+ ],
+ "partite_senza_modello": [
+  {
+   "fixture_id": 1492435,
+   "lega": "Brasile Serie A",
+   "giornata": "Regular Season - 33",
+   "kickoff_locale": "2026-10-28T23:30",
+   "casa": "Fluminense",
+   "ospite": "Internacional",
+   "misurabile": "solo 1X2",
+   "flag": [
+    "MODELLO NON DISPONIBILE"
+   ]
+  },
+  {
+   "fixture_id": 1492438,
+   "lega": "Brasile Serie A",
+   "giornata": "Regular Season - 33",
+   "kickoff_locale": "2026-10-28T23:30",
+   "casa": "Santos",
+   "ospite": "Palmeiras",
+   "misurabile": "solo 1X2",
+   "flag": [
+    "MODELLO NON DISPONIBILE"
+   ]
+  },
+  {
+   "fixture_id": 1492432,
+   "lega": "Brasile Serie A",
+   "giornata": "Regular Season - 33",
+   "kickoff_locale": "2026-10-28T23:30",
+   "casa": "Bragantino",
+   "ospite": "Chapecoense-SC",
+   "misurabile": "solo 1X2",
+   "flag": [
+    "MODELLO NON DISPONIBILE"
+   ]
+  },
+  {
+   "fixture_id": 1601582,
+   "lega": "Serie B",
+   "giornata": "Regular Season - 9",
+   "kickoff_locale": "2026-10-28T19:00",
+   "casa": "Pisa",
+   "ospite": "Palermo",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1601578,
+   "lega": "Serie B",
+   "giornata": "Regular Season - 9",
+   "kickoff_locale": "2026-10-28T20:00",
+   "casa": "Juve Stabia",
+   "ospite": "Hellas Verona",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1601575,
+   "lega": "Serie B",
+   "giornata": "Regular Season - 9",
+   "kickoff_locale": "2026-10-28T20:00",
+   "casa": "Carrarese",
+   "ospite": "Arezzo",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1556689,
+   "lega": "Scottish Premiership",
+   "giornata": "Regular Season - 11",
+   "kickoff_locale": "2026-10-28T20:45",
+   "casa": "Celtic",
+   "ospite": "Dundee Utd",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1556693,
+   "lega": "Scottish Premiership",
+   "giornata": "Regular Season - 11",
+   "kickoff_locale": "2026-10-28T20:45",
+   "casa": "ST Mirren",
+   "ospite": "Hibernian",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1556688,
+   "lega": "Scottish Premiership",
+   "giornata": "Regular Season - 11",
+   "kickoff_locale": "2026-10-28T20:45",
+   "casa": "Aberdeen",
+   "ospite": "Falkirk",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1556690,
+   "lega": "Scottish Premiership",
+   "giornata": "Regular Season - 11",
+   "kickoff_locale": "2026-10-28T20:45",
+   "casa": "Dundee",
+   "ospite": "Kilmarnock",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1556692,
+   "lega": "Scottish Premiership",
+   "giornata": "Regular Season - 11",
+   "kickoff_locale": "2026-10-28T20:45",
+   "casa": "ST Johnstone",
+   "ospite": "Motherwell",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1556691,
+   "lega": "Scottish Premiership",
+   "giornata": "Regular Season - 11",
+   "kickoff_locale": "2026-10-28T21:00",
+   "casa": "Heart Of Midlothian",
+   "ospite": "Rangers",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  }
+ ],
+ "diagnostica": {
+  "partite_totali": 5,
+  "candidati": 2,
+  "scartati_soglia": 3,
+  "scartati_quota_max": 0,
+  "scartati_dati": 0,
+  "scartati_pipeline": 0,
+  "scartati_fiducia": 0,
+  "scartati_stake": 0,
+  "escluse_dal_cap": 0,
+  "sospesi_per_degrado": 0
+ },
+ "motivi_degrado": [],
+ "avviato_il": "2026-10-28T05:15:51Z",
+ "durata_secondi": 7,
+ "innesco": "workflow_dispatch"
+}
