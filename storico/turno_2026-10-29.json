@@ -1,0 +1,368 @@
+{
+ "schema_version": "1.1",
+ "generato_il": "2026-10-29T05:16:05Z",
+ "giorno_operativo": "2026-10-29",
+ "stato": "ok",
+ "freschezza": {
+  "stagione": {
+   "calendario": "2627",
+   "modello": "2627",
+   "ok": true
+  },
+  "football_data": {
+   "ultimo_risultato": "2026-10-26",
+   "giorni_fa": 3,
+   "record": 645,
+   "partite_senza_risultato": 0,
+   "ok": true
+  },
+  "understat_xg": {
+   "ultima_stagione": "2526",
+   "stagione_richiesta": "2526",
+   "record": 60,
+   "uso": "solo stagioni concluse: la stagione in corso entra nel modello coi gol, non con gli xG",
+   "ok": true
+  },
+  "api_football_odds": {
+   "chiamate_ok": 26,
+   "fixture_con_quote": 2,
+   "fixture_totali": 2,
+   "ok": true
+  },
+  "api_football_injuries": {
+   "chiamate_ok": 2,
+   "chiamate_fallite": 0,
+   "righe_salvate": 20,
+   "fixture_con_assenze": 2,
+   "usate_dal_modello": false,
+   "ok": true
+  },
+  "transfermarkt": {
+   "stagione_valori": "2526",
+   "stagione_richiesta": "2526",
+   "record": 1170,
+   "foto_del": "2026-07-09",
+   "foto_giorni": 112,
+   "uso": "prior dai valori di rosa della stagione precedente, per scelta: la data della foto non cambia le probabilita' (flag ROSA NON AGGIORNATA sulle partite)",
+   "ok": true
+  }
+ },
+ "modello": {
+  "commit": "1a61e1f",
+  "logloss_gap_test": 0.0135,
+  "w_shrinkage": null,
+  "shrinkage": {
+   "testato": true,
+   "w_stimato": 0.0,
+   "adottato": false,
+   "motivo": "non batte il mercato fuori campione (analisi_2026_09/shrinkage_report.md)"
+  },
+  "gate_superato": false
+ },
+ "regole": {
+  "versione_regole": "2.1",
+  "in_vigore_dal": "2026-10-27",
+  "criterio": "edge_pp",
+  "sconto_modello": 1.0,
+  "sconto_analyst": 0.97,
+  "soglia_pp": 0.03,
+  "formula_quota_ingresso": "1 / (p_modello x sconto_modello - soglia_pp), per eccesso al centesimo",
+  "quota_max": 3.0,
+  "pipeline_ammesse": [
+   "xg"
+  ],
+  "stake_fisso": 1,
+  "stake_max_pick": 1,
+  "esposizione_max_giorno": 3,
+  "combo_ammesse": false,
+  "mercati_misurabili": [
+   "1X2",
+   "DC",
+   "OU 2.5",
+   "AH linea principale"
+  ],
+  "revisione": {
+   "dopo_pick_misurabili": 50,
+   "conteggio_dal": "2026-10-27",
+   "sotto_meno_1_pp": "si torna alla v2.0: sconto 0,93 e soglia 5 punti",
+   "fra_meno_1_e_piu_1_pp": "inconcludente: altre 50 pick con le stesse regole",
+   "sopra_piu_1_pp": "si tiene la v2.1 e torna lo stake per fasce, coi tetti provvisori di H8 (2/10 e 4/10)"
+  },
+  "tetti_validi_fino_a": "decisione H8 (150 pick di sistema con CLV misurato): mai sopra 2/10 e 4/10 prima",
+  "penalita_rosa_non_recente": false,
+  "nota_fiducia": "fiducia_suggerita e' gia' calcolata con queste regole: non va ricalcolata dai flag. Con penalita_rosa_non_recente false, snapshot_rosa_recente false non toglie punti. Con stake_fisso i flag non riducono lo stake: il veto resta fiducia - 3 < stake.",
+  "significato_pipeline": {
+   "xg": "forze costruite sugli xG Understat delle stagioni concluse, piu' il prior dai valori di rosa; la stagione in corso entra coi gol",
+   "ripiego": "forze dai tiri in porta, senza xG e senza prior (Eredivisie, Portogallo, Belgio)"
+  },
+  "nota_assenze": "l'elenco degli assenti e' per il controllo a mano: il modello non lo usa (assenze_alimentate false)",
+  "modalita": "shadow"
+ },
+ "partite": [
+  {
+   "fixture_id": 1550170,
+   "lega": "Serie A",
+   "pipeline": "xg",
+   "giornata": "Regular Season - 9",
+   "kickoff_locale": "2026-10-29T18:30",
+   "casa": "Frosinone",
+   "ospite": "Lecce",
+   "p_modello": {
+    "1": 0.5264,
+    "X": 0.2462,
+    "2": 0.2274
+   },
+   "p_finale": {
+    "1": 0.5264,
+    "X": 0.2462,
+    "2": 0.2274
+   },
+   "quota_ingresso_richiesta": {
+    "1": 2.02,
+    "X": 4.63,
+    "2": 5.07
+   },
+   "qualita": {
+    "xg_disponibile": true,
+    "xg_stagione_corrente": false,
+    "assenze_alimentate": false,
+    "assenze_elencate": true,
+    "neopromossa": true,
+    "snapshot_rosa_recente": false,
+    "n_match_stagione": 8
+   },
+   "fiducia_suggerita": 5,
+   "flag": [
+    "ASSENZE NON ALIMENTATE",
+    "ROSA NON AGGIORNATA"
+   ],
+   "assenze": {
+    "casa": [
+     {
+      "giocatore": "F. Grillitsch",
+      "stato": "fuori",
+      "motivo": "Thigh Injury"
+     }
+    ],
+    "ospite": [
+     {
+      "giocatore": "M. Berisha",
+      "stato": "fuori",
+      "motivo": "Thigh Injury"
+     },
+     {
+      "giocatore": "L. Coulibaly",
+      "stato": "fuori",
+      "motivo": "Thigh Injury"
+     },
+     {
+      "giocatore": "K. Gaspar",
+      "stato": "fuori",
+      "motivo": "Red Card"
+     },
+     {
+      "giocatore": "I. Ilic",
+      "stato": "fuori",
+      "motivo": "Thigh Injury"
+     },
+     {
+      "giocatore": "S. Pierotti",
+      "stato": "fuori",
+      "motivo": "Ankle Injury"
+     }
+    ]
+   },
+   "candidato": false
+  },
+  {
+   "fixture_id": 1550169,
+   "lega": "Serie A",
+   "pipeline": "xg",
+   "giornata": "Regular Season - 9",
+   "kickoff_locale": "2026-10-29T20:45",
+   "casa": "Fiorentina",
+   "ospite": "Atalanta",
+   "p_modello": {
+    "1": 0.2611,
+    "X": 0.2465,
+    "2": 0.4925
+   },
+   "p_finale": {
+    "1": 0.2611,
+    "X": 0.2465,
+    "2": 0.4925
+   },
+   "quota_ingresso_richiesta": {
+    "1": 4.33,
+    "X": 4.62,
+    "2": 2.17
+   },
+   "qualita": {
+    "xg_disponibile": true,
+    "xg_stagione_corrente": false,
+    "assenze_alimentate": false,
+    "assenze_elencate": true,
+    "neopromossa": false,
+    "snapshot_rosa_recente": false,
+    "n_match_stagione": 8
+   },
+   "fiducia_suggerita": 6,
+   "flag": [
+    "ASSENZE NON ALIMENTATE",
+    "ROSA NON AGGIORNATA"
+   ],
+   "assenze": {
+    "casa": [
+     {
+      "giocatore": "A. Atta",
+      "stato": "fuori",
+      "motivo": "Abdominal strain"
+     },
+     {
+      "giocatore": "F. Parisi",
+      "stato": "fuori",
+      "motivo": "Knee Injury"
+     },
+     {
+      "giocatore": "M. Pongracic",
+      "stato": "fuori",
+      "motivo": "Muscle Injury"
+     },
+     {
+      "giocatore": "R. Sottil",
+      "stato": "fuori",
+      "motivo": "Back Injury"
+     },
+     {
+      "giocatore": "L. Ranieri",
+      "stato": "in dubbio",
+      "motivo": "Leg Injury"
+     }
+    ],
+    "ospite": [
+     {
+      "giocatore": "R. Bellanova",
+      "stato": "fuori",
+      "motivo": "Muscle Injury"
+     },
+     {
+      "giocatore": "I. Hien",
+      "stato": "fuori",
+      "motivo": "Muscle Injury"
+     },
+     {
+      "giocatore": "F. Kessie",
+      "stato": "fuori",
+      "motivo": "Calf Injury"
+     },
+     {
+      "giocatore": "S. Kolasinac",
+      "stato": "fuori",
+      "motivo": "Thigh Injury"
+     },
+     {
+      "giocatore": "O. Kossounou",
+      "stato": "fuori",
+      "motivo": "Thigh Injury"
+     },
+     {
+      "giocatore": "G. Raspadori",
+      "stato": "fuori",
+      "motivo": "Thigh Injury"
+     },
+     {
+      "giocatore": "G. Scamacca",
+      "stato": "fuori",
+      "motivo": "Thigh Injury"
+     },
+     {
+      "giocatore": "G. Scalvini",
+      "stato": "in dubbio",
+      "motivo": "Thigh Injury"
+     },
+     {
+      "giocatore": "K. Sulemana",
+      "stato": "in dubbio",
+      "motivo": "Knee Injury"
+     }
+    ]
+   },
+   "candidato": true,
+   "esito_candidato": "2",
+   "misurabile_clv": true,
+   "stake_provvisorio": 1
+  }
+ ],
+ "candidati": [
+  1550169
+ ],
+ "partite_senza_modello": [
+  {
+   "fixture_id": 1492430,
+   "lega": "Brasile Serie A",
+   "giornata": "Regular Season - 33",
+   "kickoff_locale": "2026-10-29T23:30",
+   "casa": "Atletico-MG",
+   "ospite": "Cruzeiro",
+   "misurabile": "solo 1X2",
+   "flag": [
+    "MODELLO NON DISPONIBILE"
+   ]
+  },
+  {
+   "fixture_id": 1603075,
+   "lega": "Saudi Pro League",
+   "giornata": "Regular Season - 12",
+   "kickoff_locale": "2026-10-29T15:35",
+   "casa": "Al Khaleej Saihat",
+   "ospite": "Al-Hazm",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1603076,
+   "lega": "Saudi Pro League",
+   "giornata": "Regular Season - 12",
+   "kickoff_locale": "2026-10-29T19:00",
+   "casa": "Al-Nassr",
+   "ospite": "Al Kholood",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1603077,
+   "lega": "Saudi Pro League",
+   "giornata": "Regular Season - 12",
+   "kickoff_locale": "2026-10-29T19:00",
+   "casa": "Al Riyadh",
+   "ospite": "Al-Qadisiyah FC",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  }
+ ],
+ "diagnostica": {
+  "partite_totali": 2,
+  "candidati": 1,
+  "scartati_soglia": 1,
+  "scartati_quota_max": 0,
+  "scartati_dati": 0,
+  "scartati_pipeline": 0,
+  "scartati_fiducia": 0,
+  "scartati_stake": 0,
+  "escluse_dal_cap": 0,
+  "sospesi_per_degrado": 0
+ },
+ "motivi_degrado": [],
+ "avviato_il": "2026-10-29T05:15:59Z",
+ "durata_secondi": 6,
+ "innesco": "workflow_dispatch"
+}
