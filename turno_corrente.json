@@ -1469,6 +1469,7 @@
    "fiducia_suggerita": 6,
    "flag": [
     "ASSENZE NON ALIMENTATE",
+    "LINE MOVEMENT ↓",
     "ROSA NON AGGIORNATA"
    ],
    "assenze": {
@@ -1547,10 +1548,11 @@
      }
     ]
    },
-   "candidato": true,
+   "candidato": false,
    "esito_candidato": "1",
    "misurabile_clv": true,
-   "stake_provvisorio": 1
+   "stake_provvisorio": 0,
+   "declassato_da": "line movement"
   },
   {
    "fixture_id": 1575208,
@@ -2790,7 +2792,6 @@
  ],
  "candidati": [
   1550186,
-  1575209,
   1552809
  ],
  "partite_senza_modello": [
@@ -3301,5 +3302,6 @@
  "motivi_degrado": [],
  "avviato_il": "2026-10-31T05:15:56Z",
  "durata_secondi": 14,
- "innesco": "workflow_dispatch"
+ "innesco": "workflow_dispatch",
+ "passata_2_il": "2026-10-31T14:01:17Z"
 }
