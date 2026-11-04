@@ -1,7 +1,7 @@
 {
  "schema_version": "1.1",
- "generato_il": "2026-11-03T05:16:00Z",
- "giorno_operativo": "2026-11-03",
+ "generato_il": "2026-11-04T05:16:01Z",
+ "giorno_operativo": "2026-11-04",
  "stato": "ok",
  "freschezza": {
   "stagione": {
@@ -10,9 +10,9 @@
    "ok": true
   },
   "football_data": {
-   "ultimo_risultato": "2026-11-01",
+   "ultimo_risultato": "2026-11-02",
    "giorni_fa": 2,
-   "record": 723,
+   "record": 730,
    "partite_senza_risultato": 0,
    "ok": true
   },
@@ -24,13 +24,13 @@
    "ok": true
   },
   "api_football_odds": {
-   "chiamate_ok": 22,
-   "fixture_con_quote": 0,
-   "fixture_totali": 0,
+   "chiamate_ok": 25,
+   "fixture_con_quote": 1,
+   "fixture_totali": 1,
    "ok": true
   },
   "api_football_injuries": {
-   "chiamate_ok": 0,
+   "chiamate_ok": 1,
    "chiamate_fallite": 0,
    "righe_salvate": 0,
    "fixture_con_assenze": 0,
@@ -42,13 +42,13 @@
    "stagione_richiesta": "2526",
    "record": 1170,
    "foto_del": "2026-07-09",
-   "foto_giorni": 117,
+   "foto_giorni": 118,
    "uso": "prior dai valori di rosa della stagione precedente, per scelta: la data della foto non cambia le probabilita' (flag ROSA NON AGGIORNATA sulle partite)",
    "ok": true
   }
  },
  "modello": {
-  "commit": "c551276",
+  "commit": "005fa5d",
   "logloss_gap_test": 0.0135,
   "w_shrinkage": null,
   "shrinkage": {
@@ -98,28 +98,83 @@
   "nota_assenze": "l'elenco degli assenti e' per il controllo a mano: il modello non lo usa (assenze_alimentate false)",
   "modalita": "shadow"
  },
- "partite": [],
+ "partite": [
+  {
+   "fixture_id": 1558657,
+   "lega": "Jupiler",
+   "pipeline": "ripiego",
+   "giornata": "Regular Season - 9",
+   "kickoff_locale": "2026-11-04T20:30",
+   "casa": "Kortrijk",
+   "ospite": "Mechelen",
+   "p_modello": {
+    "1": 0.3965,
+    "X": 0.3025,
+    "2": 0.3011
+   },
+   "p_finale": {
+    "1": 0.3965,
+    "X": 0.3025,
+    "2": 0.3011
+   },
+   "quota_ingresso_richiesta": {
+    "1": 2.73,
+    "X": 3.67,
+    "2": 3.69
+   },
+   "qualita": {
+    "xg_disponibile": false,
+    "xg_stagione_corrente": false,
+    "assenze_alimentate": false,
+    "assenze_elencate": true,
+    "neopromossa": true,
+    "snapshot_rosa_recente": false,
+    "n_match_stagione": 9
+   },
+   "fiducia_suggerita": 4,
+   "flag": [
+    "ASSENZE NON ALIMENTATE"
+   ],
+   "assenze": {
+    "casa": [],
+    "ospite": []
+   },
+   "candidato": false
+  }
+ ],
  "candidati": [],
  "partite_senza_modello": [
   {
-   "fixture_id": 1492443,
+   "fixture_id": 1492445,
    "lega": "Brasile Serie A",
    "giornata": "Regular Season - 34",
-   "kickoff_locale": "2026-11-03T23:30",
-   "casa": "Chapecoense-SC",
-   "ospite": "Mirassol",
+   "kickoff_locale": "2026-11-04T23:30",
+   "casa": "Flamengo RJ",
+   "ospite": "Gremio",
    "misurabile": "solo 1X2",
    "flag": [
     "MODELLO NON DISPONIBILE"
    ]
   },
   {
-   "fixture_id": 1635723,
+   "fixture_id": 1492440,
+   "lega": "Brasile Serie A",
+   "giornata": "Regular Season - 34",
+   "kickoff_locale": "2026-11-04T23:30",
+   "casa": "Athletico-PR",
+   "ospite": "Vasco",
+   "misurabile": "solo 1X2",
+   "flag": [
+    "MODELLO NON DISPONIBILE"
+   ]
+  },
+  {
+   "fixture_id": 1635606,
    "lega": "Champions League",
    "giornata": "League Stage - 4",
-   "kickoff_locale": "2026-11-03T18:45",
-   "casa": "Shakhtar Donetsk",
-   "ospite": "Sporting CP",
+   "kickoff_locale": "2026-11-04T18:45",
+   "casa": "AEK Athens FC",
+   "ospite": "Real Madrid",
    "misurabile": "nessuno",
    "flag": [
     "MODELLO NON DISPONIBILE",
@@ -127,12 +182,12 @@
    ]
   },
   {
-   "fixture_id": 1635669,
+   "fixture_id": 1635658,
    "lega": "Champions League",
    "giornata": "League Stage - 4",
-   "kickoff_locale": "2026-11-03T18:45",
-   "casa": "Galatasaray",
-   "ospite": "VfB Stuttgart",
+   "kickoff_locale": "2026-11-04T18:45",
+   "casa": "Fenerbahçe",
+   "ospite": "Liverpool",
    "misurabile": "nessuno",
    "flag": [
     "MODELLO NON DISPONIBILE",
@@ -140,12 +195,12 @@
    ]
   },
   {
-   "fixture_id": 1635695,
+   "fixture_id": 1635681,
    "lega": "Champions League",
    "giornata": "League Stage - 4",
-   "kickoff_locale": "2026-11-03T21:00",
-   "casa": "Manchester United",
-   "ospite": "AS Roma",
+   "kickoff_locale": "2026-11-04T21:00",
+   "casa": "Lens",
+   "ospite": "Como",
    "misurabile": "nessuno",
    "flag": [
     "MODELLO NON DISPONIBILE",
@@ -153,12 +208,12 @@
    ]
   },
   {
-   "fixture_id": 1635662,
+   "fixture_id": 1635651,
    "lega": "Champions League",
    "giornata": "League Stage - 4",
-   "kickoff_locale": "2026-11-03T21:00",
-   "casa": "Feyenoord",
-   "ospite": "Inter",
+   "kickoff_locale": "2026-11-04T21:00",
+   "casa": "Borussia Dortmund",
+   "ospite": "Real Betis",
    "misurabile": "nessuno",
    "flag": [
     "MODELLO NON DISPONIBILE",
@@ -166,12 +221,12 @@
    ]
   },
   {
-   "fixture_id": 1635640,
+   "fixture_id": 1635710,
    "lega": "Champions League",
    "giornata": "League Stage - 4",
-   "kickoff_locale": "2026-11-03T21:00",
-   "casa": "Bodo/Glimt",
-   "ospite": "Lille",
+   "kickoff_locale": "2026-11-04T21:00",
+   "casa": "RB Leipzig",
+   "ospite": "Manchester City",
    "misurabile": "nessuno",
    "flag": [
     "MODELLO NON DISPONIBILE",
@@ -179,12 +234,12 @@
    ]
   },
   {
-   "fixture_id": 1635627,
+   "fixture_id": 1635707,
    "lega": "Champions League",
    "giornata": "League Stage - 4",
-   "kickoff_locale": "2026-11-03T21:00",
-   "casa": "Barcelona",
-   "ospite": "Aston Villa",
+   "kickoff_locale": "2026-11-04T21:00",
+   "casa": "PSV Eindhoven",
+   "ospite": "Club Brugge KV",
    "misurabile": "nessuno",
    "flag": [
     "MODELLO NON DISPONIBILE",
@@ -192,12 +247,12 @@
    ]
   },
   {
-   "fixture_id": 1635622,
+   "fixture_id": 1635656,
    "lega": "Champions League",
    "giornata": "League Stage - 4",
-   "kickoff_locale": "2026-11-03T21:00",
-   "casa": "Atletico Madrid",
-   "ospite": "Bayern München",
+   "kickoff_locale": "2026-11-04T21:00",
+   "casa": "FC Porto",
+   "ospite": "Napoli",
    "misurabile": "nessuno",
    "flag": [
     "MODELLO NON DISPONIBILE",
@@ -205,12 +260,12 @@
    ]
   },
   {
-   "fixture_id": 1635746,
+   "fixture_id": 1635726,
    "lega": "Champions League",
    "giornata": "League Stage - 4",
-   "kickoff_locale": "2026-11-03T21:00",
-   "casa": "Villarreal",
-   "ospite": "Paris Saint Germain",
+   "kickoff_locale": "2026-11-04T21:00",
+   "casa": "Slavia Praha",
+   "ospite": "Arsenal",
    "misurabile": "nessuno",
    "flag": [
     "MODELLO NON DISPONIBILE",
@@ -218,12 +273,12 @@
    ]
   },
   {
-   "fixture_id": 1635677,
+   "fixture_id": 1635745,
    "lega": "Champions League",
    "giornata": "League Stage - 4",
-   "kickoff_locale": "2026-11-03T21:00",
-   "casa": "Lask Linz",
-   "ospite": "Slovan Bratislava",
+   "kickoff_locale": "2026-11-04T21:00",
+   "casa": "Viking",
+   "ospite": "Sabah FA",
    "misurabile": "nessuno",
    "flag": [
     "MODELLO NON DISPONIBILE",
@@ -231,12 +286,12 @@
    ]
   },
   {
-   "fixture_id": 1563240,
-   "lega": "Championship",
-   "giornata": "Regular Season - 14",
-   "kickoff_locale": "2026-11-03T20:45",
-   "casa": "Blackburn",
-   "ospite": "Stoke City",
+   "fixture_id": 1636324,
+   "lega": "Europa League",
+   "giornata": "League Stage - 4",
+   "kickoff_locale": "2026-11-04T16:30",
+   "casa": "Rennes",
+   "ospite": "Olympiakos Piraeus",
    "misurabile": "nessuno",
    "flag": [
     "MODELLO NON DISPONIBILE",
@@ -244,12 +299,12 @@
    ]
   },
   {
-   "fixture_id": 1563241,
+   "fixture_id": 1563248,
    "lega": "Championship",
    "giornata": "Regular Season - 14",
-   "kickoff_locale": "2026-11-03T20:45",
-   "casa": "Derby",
-   "ospite": "Norwich",
+   "kickoff_locale": "2026-11-04T20:45",
+   "casa": "Cardiff",
+   "ospite": "West Ham",
    "misurabile": "nessuno",
    "flag": [
     "MODELLO NON DISPONIBILE",
@@ -257,12 +312,12 @@
    ]
   },
   {
-   "fixture_id": 1563242,
+   "fixture_id": 1563250,
    "lega": "Championship",
    "giornata": "Regular Season - 14",
-   "kickoff_locale": "2026-11-03T20:45",
-   "casa": "Portsmouth",
-   "ospite": "Swansea",
+   "kickoff_locale": "2026-11-04T20:45",
+   "casa": "Wrexham",
+   "ospite": "Middlesbrough",
    "misurabile": "nessuno",
    "flag": [
     "MODELLO NON DISPONIBILE",
@@ -270,77 +325,12 @@
    ]
   },
   {
-   "fixture_id": 1563243,
+   "fixture_id": 1563247,
    "lega": "Championship",
    "giornata": "Regular Season - 14",
-   "kickoff_locale": "2026-11-03T20:45",
-   "casa": "Preston",
-   "ospite": "Sheffield Utd",
-   "misurabile": "nessuno",
-   "flag": [
-    "MODELLO NON DISPONIBILE",
-    "COMPETIZIONE NON COPERTA"
-   ]
-  },
-  {
-   "fixture_id": 1563244,
-   "lega": "Championship",
-   "giornata": "Regular Season - 14",
-   "kickoff_locale": "2026-11-03T20:45",
-   "casa": "QPR",
-   "ospite": "Burnley",
-   "misurabile": "nessuno",
-   "flag": [
-    "MODELLO NON DISPONIBILE",
-    "COMPETIZIONE NON COPERTA"
-   ]
-  },
-  {
-   "fixture_id": 1563245,
-   "lega": "Championship",
-   "giornata": "Regular Season - 14",
-   "kickoff_locale": "2026-11-03T20:45",
-   "casa": "Watford",
-   "ospite": "Lincoln",
-   "misurabile": "nessuno",
-   "flag": [
-    "MODELLO NON DISPONIBILE",
-    "COMPETIZIONE NON COPERTA"
-   ]
-  },
-  {
-   "fixture_id": 1563249,
-   "lega": "Championship",
-   "giornata": "Regular Season - 14",
-   "kickoff_locale": "2026-11-03T20:45",
-   "casa": "Charlton",
-   "ospite": "Bolton",
-   "misurabile": "nessuno",
-   "flag": [
-    "MODELLO NON DISPONIBILE",
-    "COMPETIZIONE NON COPERTA"
-   ]
-  },
-  {
-   "fixture_id": 1563239,
-   "lega": "Championship",
-   "giornata": "Regular Season - 14",
-   "kickoff_locale": "2026-11-03T21:00",
-   "casa": "Birmingham",
-   "ospite": "Millwall",
-   "misurabile": "nessuno",
-   "flag": [
-    "MODELLO NON DISPONIBILE",
-    "COMPETIZIONE NON COPERTA"
-   ]
-  },
-  {
-   "fixture_id": 1563246,
-   "lega": "Championship",
-   "giornata": "Regular Season - 14",
-   "kickoff_locale": "2026-11-03T21:00",
-   "casa": "West Brom",
-   "ospite": "Southampton",
+   "kickoff_locale": "2026-11-04T21:00",
+   "casa": "Bristol City",
+   "ospite": "Wolves",
    "misurabile": "nessuno",
    "flag": [
     "MODELLO NON DISPONIBILE",
@@ -349,9 +339,9 @@
   }
  ],
  "diagnostica": {
-  "partite_totali": 0,
+  "partite_totali": 1,
   "candidati": 0,
-  "scartati_soglia": 0,
+  "scartati_soglia": 1,
   "scartati_quota_max": 0,
   "scartati_dati": 0,
   "scartati_pipeline": 0,
@@ -361,7 +351,7 @@
   "sospesi_per_degrado": 0
  },
  "motivi_degrado": [],
- "avviato_il": "2026-11-03T05:15:57Z",
- "durata_secondi": 3,
+ "avviato_il": "2026-11-04T05:15:55Z",
+ "durata_secondi": 6,
  "innesco": "workflow_dispatch"
 }
