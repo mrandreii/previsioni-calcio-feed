@@ -1,0 +1,651 @@
+{
+ "schema_version": "1.1",
+ "generato_il": "2026-11-05T05:16:02Z",
+ "giorno_operativo": "2026-11-05",
+ "stato": "ok",
+ "freschezza": {
+  "stagione": {
+   "calendario": "2627",
+   "modello": "2627",
+   "ok": true
+  },
+  "football_data": {
+   "ultimo_risultato": "2026-11-04",
+   "giorni_fa": 1,
+   "record": 731,
+   "partite_senza_risultato": 0,
+   "ok": true
+  },
+  "understat_xg": {
+   "ultima_stagione": "2526",
+   "stagione_richiesta": "2526",
+   "record": 60,
+   "uso": "solo stagioni concluse: la stagione in corso entra nel modello coi gol, non con gli xG",
+   "ok": true
+  },
+  "api_football_odds": {
+   "chiamate_ok": 24,
+   "fixture_con_quote": 0,
+   "fixture_totali": 0,
+   "ok": true
+  },
+  "api_football_injuries": {
+   "chiamate_ok": 0,
+   "chiamate_fallite": 0,
+   "righe_salvate": 0,
+   "fixture_con_assenze": 0,
+   "usate_dal_modello": false,
+   "ok": true
+  },
+  "transfermarkt": {
+   "stagione_valori": "2526",
+   "stagione_richiesta": "2526",
+   "record": 1170,
+   "foto_del": "2026-07-09",
+   "foto_giorni": 119,
+   "uso": "prior dai valori di rosa della stagione precedente, per scelta: la data della foto non cambia le probabilita' (flag ROSA NON AGGIORNATA sulle partite)",
+   "ok": true
+  }
+ },
+ "modello": {
+  "commit": "fd0a012",
+  "logloss_gap_test": 0.0135,
+  "w_shrinkage": null,
+  "shrinkage": {
+   "testato": true,
+   "w_stimato": 0.0,
+   "adottato": false,
+   "motivo": "non batte il mercato fuori campione (analisi_2026_09/shrinkage_report.md)"
+  },
+  "gate_superato": false
+ },
+ "regole": {
+  "versione_regole": "2.1",
+  "in_vigore_dal": "2026-10-27",
+  "criterio": "edge_pp",
+  "sconto_modello": 1.0,
+  "sconto_analyst": 0.97,
+  "soglia_pp": 0.03,
+  "formula_quota_ingresso": "1 / (p_modello x sconto_modello - soglia_pp), per eccesso al centesimo",
+  "quota_max": 3.0,
+  "pipeline_ammesse": [
+   "xg"
+  ],
+  "stake_fisso": 1,
+  "stake_max_pick": 1,
+  "esposizione_max_giorno": 3,
+  "combo_ammesse": false,
+  "mercati_misurabili": [
+   "1X2",
+   "DC",
+   "OU 2.5",
+   "AH linea principale"
+  ],
+  "revisione": {
+   "dopo_pick_misurabili": 50,
+   "conteggio_dal": "2026-10-27",
+   "sotto_meno_1_pp": "si torna alla v2.0: sconto 0,93 e soglia 5 punti",
+   "fra_meno_1_e_piu_1_pp": "inconcludente: altre 50 pick con le stesse regole",
+   "sopra_piu_1_pp": "si tiene la v2.1 e torna lo stake per fasce, coi tetti provvisori di H8 (2/10 e 4/10)"
+  },
+  "tetti_validi_fino_a": "decisione H8 (150 pick di sistema con CLV misurato): mai sopra 2/10 e 4/10 prima",
+  "penalita_rosa_non_recente": false,
+  "nota_fiducia": "fiducia_suggerita e' gia' calcolata con queste regole: non va ricalcolata dai flag. Con penalita_rosa_non_recente false, snapshot_rosa_recente false non toglie punti. Con stake_fisso i flag non riducono lo stake: il veto resta fiducia - 3 < stake.",
+  "significato_pipeline": {
+   "xg": "forze costruite sugli xG Understat delle stagioni concluse, piu' il prior dai valori di rosa; la stagione in corso entra coi gol",
+   "ripiego": "forze dai tiri in porta, senza xG e senza prior (Eredivisie, Portogallo, Belgio)"
+  },
+  "nota_assenze": "l'elenco degli assenti e' per il controllo a mano: il modello non lo usa (assenze_alimentate false)",
+  "modalita": "shadow"
+ },
+ "partite": [],
+ "candidati": [],
+ "partite_senza_modello": [
+  {
+   "fixture_id": 1492447,
+   "lega": "Brasile Serie A",
+   "giornata": "Regular Season - 34",
+   "kickoff_locale": "2026-11-05T23:30",
+   "casa": "Palmeiras",
+   "ospite": "Remo",
+   "misurabile": "solo 1X2",
+   "flag": [
+    "MODELLO NON DISPONIBILE"
+   ]
+  },
+  {
+   "fixture_id": 1493227,
+   "lega": "Argentina Liga Profesional",
+   "giornata": "Clausura - 16",
+   "kickoff_locale": "2026-11-05T19:00",
+   "casa": "Aldosivi",
+   "ospite": "River Plate",
+   "misurabile": "solo 1X2",
+   "flag": [
+    "MODELLO NON DISPONIBILE"
+   ]
+  },
+  {
+   "fixture_id": 1493233,
+   "lega": "Argentina Liga Profesional",
+   "giornata": "Clausura - 16",
+   "kickoff_locale": "2026-11-05T23:15",
+   "casa": "Gimnasia L.P.",
+   "ospite": "Belgrano",
+   "misurabile": "solo 1X2",
+   "flag": [
+    "MODELLO NON DISPONIBILE"
+   ]
+  },
+  {
+   "fixture_id": 1636254,
+   "lega": "Europa League",
+   "giornata": "League Stage - 4",
+   "kickoff_locale": "2026-11-05T18:45",
+   "casa": "Crystal Palace",
+   "ospite": "1899 Hoffenheim",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636289,
+   "lega": "Europa League",
+   "giornata": "League Stage - 4",
+   "kickoff_locale": "2026-11-05T18:45",
+   "casa": "Lillestrom",
+   "ospite": "Plzen",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636302,
+   "lega": "Europa League",
+   "giornata": "League Stage - 4",
+   "kickoff_locale": "2026-11-05T18:45",
+   "casa": "NEC Nijmegen",
+   "ospite": "Omonia Nicosia",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636208,
+   "lega": "Europa League",
+   "giornata": "League Stage - 4",
+   "kickoff_locale": "2026-11-05T18:45",
+   "casa": "AC Milan",
+   "ospite": "Ferencvarosi TC",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636319,
+   "lega": "Europa League",
+   "giornata": "League Stage - 4",
+   "kickoff_locale": "2026-11-05T18:45",
+   "casa": "Real Sociedad",
+   "ospite": "Lyon",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636211,
+   "lega": "Europa League",
+   "giornata": "League Stage - 4",
+   "kickoff_locale": "2026-11-05T18:45",
+   "casa": "Anderlecht",
+   "ospite": "Red Bull Salzburg",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636337,
+   "lega": "Europa League",
+   "giornata": "League Stage - 4",
+   "kickoff_locale": "2026-11-05T18:45",
+   "casa": "Sparta Praha",
+   "ospite": "Bournemouth",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636286,
+   "lega": "Europa League",
+   "giornata": "League Stage - 4",
+   "kickoff_locale": "2026-11-05T18:45",
+   "casa": "Levski Sofia",
+   "ospite": "Jagiellonia",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636223,
+   "lega": "Europa League",
+   "giornata": "League Stage - 4",
+   "kickoff_locale": "2026-11-05T21:00",
+   "casa": "Bayer Leverkusen",
+   "ospite": "Marseille",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636219,
+   "lega": "Europa League",
+   "giornata": "League Stage - 4",
+   "kickoff_locale": "2026-11-05T21:00",
+   "casa": "AZ Alkmaar",
+   "ospite": "Juventus",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636229,
+   "lega": "Europa League",
+   "giornata": "League Stage - 4",
+   "kickoff_locale": "2026-11-05T21:00",
+   "casa": "Benfica",
+   "ospite": "Lech Poznan",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636250,
+   "lega": "Europa League",
+   "giornata": "League Stage - 4",
+   "kickoff_locale": "2026-11-05T21:00",
+   "casa": "Celtic",
+   "ospite": "Beşiktaş",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636245,
+   "lega": "Europa League",
+   "giornata": "League Stage - 4",
+   "kickoff_locale": "2026-11-05T21:00",
+   "casa": "Celta Vigo",
+   "ospite": "Union St. Gilloise",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636264,
+   "lega": "Europa League",
+   "giornata": "League Stage - 4",
+   "kickoff_locale": "2026-11-05T21:00",
+   "casa": "Hapoel Beer Sheva",
+   "ospite": "OFI",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636339,
+   "lega": "Europa League",
+   "giornata": "League Stage - 4",
+   "kickoff_locale": "2026-11-05T21:00",
+   "casa": "Sturm Graz",
+   "ospite": "Celje",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636345,
+   "lega": "Europa League",
+   "giornata": "League Stage - 4",
+   "kickoff_locale": "2026-11-05T21:00",
+   "casa": "Sunderland",
+   "ospite": "Dinamo Zagreb",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636347,
+   "lega": "Europa League",
+   "giornata": "League Stage - 4",
+   "kickoff_locale": "2026-11-05T21:00",
+   "casa": "Torreense",
+   "ospite": "Ararat-Armenia",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636448,
+   "lega": "Conference League",
+   "giornata": "League Stage - 3",
+   "kickoff_locale": "2026-11-05T18:45",
+   "casa": "FC Midtjylland",
+   "ospite": "Ajax",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636376,
+   "lega": "Conference League",
+   "giornata": "League Stage - 3",
+   "kickoff_locale": "2026-11-05T18:45",
+   "casa": "Aarhus",
+   "ospite": "SC Braga",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636383,
+   "lega": "Conference League",
+   "giornata": "League Stage - 3",
+   "kickoff_locale": "2026-11-05T18:45",
+   "casa": "Atalanta",
+   "ospite": "Kairat Almaty",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636399,
+   "lega": "Conference League",
+   "giornata": "League Stage - 3",
+   "kickoff_locale": "2026-11-05T18:45",
+   "casa": "FK Crvena Zvezda",
+   "ospite": "Inter Club d'Escaldes",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636444,
+   "lega": "Conference League",
+   "giornata": "League Stage - 3",
+   "kickoff_locale": "2026-11-05T18:45",
+   "casa": "Lincoln Red Imps FC",
+   "ospite": "HNK Hajduk Split",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636476,
+   "lega": "Conference League",
+   "giornata": "League Stage - 3",
+   "kickoff_locale": "2026-11-05T18:45",
+   "casa": "Trabzonspor",
+   "ospite": "SC Freiburg",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636473,
+   "lega": "Conference League",
+   "giornata": "League Stage - 3",
+   "kickoff_locale": "2026-11-05T18:45",
+   "casa": "FC Thun",
+   "ospite": "Heart Of Midlothian",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636439,
+   "lega": "Conference League",
+   "giornata": "League Stage - 3",
+   "kickoff_locale": "2026-11-05T18:45",
+   "casa": "KuPS",
+   "ospite": "Gent",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636452,
+   "lega": "Conference League",
+   "giornata": "League Stage - 3",
+   "kickoff_locale": "2026-11-05T18:45",
+   "casa": "Mjallby AIF",
+   "ospite": "Borac Banja Luka",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636456,
+   "lega": "Conference League",
+   "giornata": "League Stage - 3",
+   "kickoff_locale": "2026-11-05T21:00",
+   "casa": "Monaco",
+   "ospite": "FC Nordsjaelland",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636408,
+   "lega": "Conference League",
+   "giornata": "League Stage - 3",
+   "kickoff_locale": "2026-11-05T21:00",
+   "casa": "FC Copenhagen",
+   "ospite": "FC Iberia 1999",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636478,
+   "lega": "Conference League",
+   "giornata": "League Stage - 3",
+   "kickoff_locale": "2026-11-05T21:00",
+   "casa": "Twente",
+   "ospite": "Pafos",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636416,
+   "lega": "Conference League",
+   "giornata": "League Stage - 3",
+   "kickoff_locale": "2026-11-05T21:00",
+   "casa": "Getafe",
+   "ospite": "Brighton",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636447,
+   "lega": "Conference League",
+   "giornata": "League Stage - 3",
+   "kickoff_locale": "2026-11-05T21:00",
+   "casa": "FC Lugano",
+   "ospite": "Kauno Žalgiris",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636465,
+   "lega": "Conference League",
+   "giornata": "League Stage - 3",
+   "kickoff_locale": "2026-11-05T21:00",
+   "casa": "Panathinaikos",
+   "ospite": "CSKA Sofia",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636483,
+   "lega": "Conference League",
+   "giornata": "League Stage - 3",
+   "kickoff_locale": "2026-11-05T21:00",
+   "casa": "Universitatea Craiova",
+   "ospite": "Egnatia Rrogozhinë",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636469,
+   "lega": "Conference League",
+   "giornata": "League Stage - 3",
+   "kickoff_locale": "2026-11-05T21:00",
+   "casa": "St. Truiden",
+   "ospite": "Brann",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636466,
+   "lega": "Conference League",
+   "giornata": "League Stage - 3",
+   "kickoff_locale": "2026-11-05T21:00",
+   "casa": "Riga",
+   "ospite": "FK Jablonec",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1603087,
+   "lega": "Saudi Pro League",
+   "giornata": "Regular Season - 13",
+   "kickoff_locale": "2026-11-05T14:25",
+   "casa": "Al Kholood",
+   "ospite": "Al Khaleej Saihat",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1603080,
+   "lega": "Saudi Pro League",
+   "giornata": "Regular Season - 13",
+   "kickoff_locale": "2026-11-05T16:10",
+   "casa": "Abha",
+   "ospite": "Al Shabab",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1603088,
+   "lega": "Saudi Pro League",
+   "giornata": "Regular Season - 13",
+   "kickoff_locale": "2026-11-05T18:30",
+   "casa": "Al-Qadisiyah FC",
+   "ospite": "Al-Fayha",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  }
+ ],
+ "diagnostica": {
+  "partite_totali": 0,
+  "candidati": 0,
+  "scartati_soglia": 0,
+  "scartati_quota_max": 0,
+  "scartati_dati": 0,
+  "scartati_pipeline": 0,
+  "scartati_fiducia": 0,
+  "scartati_stake": 0,
+  "escluse_dal_cap": 0,
+  "sospesi_per_degrado": 0
+ },
+ "motivi_degrado": [],
+ "avviato_il": "2026-11-05T05:15:59Z",
+ "durata_secondi": 4,
+ "innesco": "workflow_dispatch"
+}
