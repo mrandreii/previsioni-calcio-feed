@@ -25,7 +25,7 @@ nicchia con CLV positivo. Il feed è quindi in **modalità shadow**
 (`regole.modalita`): serve a misurare il modello su prezzi reali, non a
 scommettere. Nulla di quanto è qui è un consiglio di gioco.
 
-## I campi principali (schema 1.1, dal 28 ottobre 2026)
+## I campi principali (schema 1.1, dal 28 ottobre 2026; `regole.decide`, `ruolo_modello` e `senza_modello` dal 15 novembre 2026)
 
 | Campo | Significato |
 |---|---|
@@ -37,7 +37,11 @@ scommettere. Nulla di quanto è qui è un consiglio di gioco.
 | `motivi_degrado` | una riga leggibile per ogni fonte che non va |
 | `freschezza` | una voce per fonte, con `ok` e, quando serve, `motivo` e `uso` |
 | `regole` | le regole in vigore: `versione_regole`, `sconto_modello`, `soglia_pp`, `stake_fisso`, `stake_max_pick`, `esposizione_max_giorno` (in decimi di unità), `combo_ammesse`, `mercati_misurabili`, `revisione` |
-| `partite[].quota_ingresso_richiesta` | la quota minima a cui l'esito passerebbe la soglia: `1 / (p × sconto_modello − soglia_pp)`, arrotondata per eccesso al centesimo |
+| `regole.decide` | chi stabilisce le probabilità delle pick ufficiali: `analyst` |
+| `regole.ruolo_modello` | cosa fa il modello in questa fase |
+| `regole.senza_modello` | le regole per i campionati senza modello (Brasile, Argentina): sconto, soglia, quota massima, massimo pick al giorno |
+| `regole.formula_quota_ingresso` | come si calcola la quota d'ingresso: una formula per le pick ufficiali (stima dell'Analyst) e una per lo shadow del modello |
+| `partite[].quota_ingresso_richiesta` | la quota d'ingresso **del modello in shadow**, non quella della pick ufficiale: `1 / (p_modello × sconto_modello − soglia_pp)`, arrotondata per eccesso al centesimo |
 | `partite[].assenze` | gli assenti noti (`fuori` o `in dubbio`, con il motivo), per il controllo a mano |
 | `partite[].qualita.assenze_alimentate` | sempre `false`: il modello non usa le assenze |
 | `partite[].qualita.assenze_elencate` | `true` se l'elenco degli assenti è arrivato |
