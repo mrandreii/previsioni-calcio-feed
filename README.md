@@ -37,6 +37,7 @@ scommettere. Nulla di quanto è qui è un consiglio di gioco.
 | `motivi_degrado` | una riga leggibile per ogni fonte che non va |
 | `freschezza` | una voce per fonte, con `ok` e, quando serve, `motivo` e `uso` |
 | `regole` | le regole in vigore: `versione_regole`, `sconto_modello`, `soglia_pp`, `stake_fisso`, `stake_max_pick`, `esposizione_max_giorno` (in decimi di unità), `combo_ammesse`, `mercati_misurabili`, `revisione` |
+| `stato_registro` | a che punto è il registro privato delle pick, **solo conteggi e date**: pick giocate, contatore della revisione (`pick_regime_v21_misurate` su `soglia_revisione`), `ultimo_giro_clv` e `giro_clv_ok` (falso se il calcolo settimanale non gira da più di 8 giorni), `candidati_ultimi_7_giorni` e `candidati_con_decisione`. Non contiene partite, quote, stake né risultati, e non entra in `stato` |
 | `regole.decide` | chi stabilisce le probabilità delle pick ufficiali: `analyst` |
 | `regole.ruolo_modello` | cosa fa il modello in questa fase |
 | `regole.senza_modello` | le regole per i campionati senza modello (Brasile, Argentina): sconto, soglia, quota massima, massimo pick al giorno |
