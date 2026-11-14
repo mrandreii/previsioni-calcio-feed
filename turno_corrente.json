@@ -1,7 +1,7 @@
 {
  "schema_version": "1.1",
- "generato_il": "2026-11-13T05:16:00Z",
- "giorno_operativo": "2026-11-13",
+ "generato_il": "2026-11-14T05:15:52Z",
+ "giorno_operativo": "2026-11-14",
  "stato": "ok",
  "freschezza": {
   "stagione": {
@@ -11,7 +11,7 @@
   },
   "football_data": {
    "ultimo_risultato": "2026-11-08",
-   "giorni_fa": 5,
+   "giorni_fa": 6,
    "record": 805,
    "partite_senza_risultato": 0,
    "ok": true
@@ -24,7 +24,7 @@
    "ok": true
   },
   "api_football_odds": {
-   "chiamate_ok": 21,
+   "chiamate_ok": 22,
    "fixture_con_quote": 0,
    "fixture_totali": 0,
    "ok": true
@@ -42,13 +42,13 @@
    "stagione_richiesta": "2526",
    "record": 1170,
    "foto_del": "2026-07-09",
-   "foto_giorni": 127,
+   "foto_giorni": 128,
    "uso": "prior dai valori di rosa della stagione precedente, per scelta: la data della foto non cambia le probabilita' (flag ROSA NON AGGIORNATA sulle partite)",
    "ok": true
   }
  },
  "modello": {
-  "commit": "eea2f0e",
+  "commit": "d1b3dbd",
   "logloss_gap_test": 0.0135,
   "w_shrinkage": null,
   "shrinkage": {
@@ -102,12 +102,76 @@
  "candidati": [],
  "partite_senza_modello": [
   {
-   "fixture_id": 1570019,
+   "fixture_id": 1492455,
+   "lega": "Brasile Serie A",
+   "giornata": "Regular Season - 35",
+   "kickoff_locale": "2026-11-14T22:30",
+   "casa": "Mirassol",
+   "ospite": "Atletico-MG",
+   "misurabile": "solo 1X2",
+   "flag": [
+    "MODELLO NON DISPONIBILE"
+   ]
+  },
+  {
+   "fixture_id": 1570024,
    "lega": "Segunda División",
    "giornata": "Regular Season - 14",
-   "kickoff_locale": "2026-11-13T20:30",
-   "casa": "Leganes",
-   "ospite": "Burgos",
+   "kickoff_locale": "2026-11-14T14:00",
+   "casa": "Valladolid",
+   "ospite": "Castellón",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1570022,
+   "lega": "Segunda División",
+   "giornata": "Regular Season - 14",
+   "kickoff_locale": "2026-11-14T16:15",
+   "casa": "Real Sociedad II",
+   "ospite": "Sporting Gijon",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1570015,
+   "lega": "Segunda División",
+   "giornata": "Regular Season - 14",
+   "kickoff_locale": "2026-11-14T18:30",
+   "casa": "Almeria",
+   "ospite": "FC Andorra",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1570020,
+   "lega": "Segunda División",
+   "giornata": "Regular Season - 14",
+   "kickoff_locale": "2026-11-14T18:30",
+   "casa": "Mallorca",
+   "ospite": "Cordoba",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1570021,
+   "lega": "Segunda División",
+   "giornata": "Regular Season - 14",
+   "kickoff_locale": "2026-11-14T21:00",
+   "casa": "Oviedo",
+   "ospite": "Girona",
    "misurabile": "nessuno",
    "flag": [
     "MODELLO NON DISPONIBILE",
@@ -128,7 +192,7 @@
   "sospesi_per_degrado": 0
  },
  "motivi_degrado": [],
- "avviato_il": "2026-11-13T05:15:56Z",
- "durata_secondi": 4,
+ "avviato_il": "2026-11-14T05:15:49Z",
+ "durata_secondi": 3,
  "innesco": "workflow_dispatch"
 }
