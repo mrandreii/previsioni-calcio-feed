@@ -1,7 +1,7 @@
 {
  "schema_version": "1.1",
- "generato_il": "2026-11-14T05:15:52Z",
- "giorno_operativo": "2026-11-14",
+ "generato_il": "2026-11-15T05:15:55Z",
+ "giorno_operativo": "2026-11-15",
  "stato": "ok",
  "freschezza": {
   "stagione": {
@@ -11,7 +11,7 @@
   },
   "football_data": {
    "ultimo_risultato": "2026-11-08",
-   "giorni_fa": 6,
+   "giorni_fa": 7,
    "record": 805,
    "partite_senza_risultato": 0,
    "ok": true
@@ -24,7 +24,7 @@
    "ok": true
   },
   "api_football_odds": {
-   "chiamate_ok": 22,
+   "chiamate_ok": 21,
    "fixture_con_quote": 0,
    "fixture_totali": 0,
    "ok": true
@@ -42,13 +42,13 @@
    "stagione_richiesta": "2526",
    "record": 1170,
    "foto_del": "2026-07-09",
-   "foto_giorni": 128,
+   "foto_giorni": 129,
    "uso": "prior dai valori di rosa della stagione precedente, per scelta: la data della foto non cambia le probabilita' (flag ROSA NON AGGIORNATA sulle partite)",
    "ok": true
   }
  },
  "modello": {
-  "commit": "d1b3dbd",
+  "commit": "2fa3a79",
   "logloss_gap_test": 0.0135,
   "w_shrinkage": null,
   "shrinkage": {
@@ -62,11 +62,14 @@
  "regole": {
   "versione_regole": "2.1",
   "in_vigore_dal": "2026-10-27",
+  "decide": "analyst",
+  "ruolo_modello": "sceglie le partite da guardare e pone il veto; resta in shadow finché gate_superato è false",
   "criterio": "edge_pp",
   "sconto_modello": 1.0,
   "sconto_analyst": 0.97,
   "soglia_pp": 0.03,
-  "formula_quota_ingresso": "1 / (p_modello x sconto_modello - soglia_pp), per eccesso al centesimo",
+  "formula_quota_ingresso": "pick ufficiali: 1 / (p_analyst x sconto_analyst - soglia_pp), per eccesso al centesimo. Shadow del modello: 1 / (p_modello x sconto_modello - soglia_pp), stessa regola di arrotondamento.",
+  "nota_quota_ingresso": "quota_ingresso_richiesta dentro ogni partita e' quella del MODELLO in shadow, non quella della pick ufficiale",
   "quota_max": 3.0,
   "pipeline_ammesse": [
    "xg"
@@ -81,6 +84,20 @@
    "OU 2.5",
    "AH linea principale"
   ],
+  "senza_modello": {
+   "campionati": [
+    "Brasile Serie A",
+    "Argentina Liga Profesional"
+   ],
+   "mercati": [
+    "1X2"
+   ],
+   "sconto_analyst": 0.93,
+   "soglia_pp": 0.05,
+   "quota_max": 3.0,
+   "max_pick_giorno": 2,
+   "flag_obbligatorio": "SENZA VETO DEL MODELLO"
+  },
   "revisione": {
    "dopo_pick_misurabili": 50,
    "conteggio_dal": "2026-10-27",
@@ -102,24 +119,12 @@
  "candidati": [],
  "partite_senza_modello": [
   {
-   "fixture_id": 1492455,
-   "lega": "Brasile Serie A",
-   "giornata": "Regular Season - 35",
-   "kickoff_locale": "2026-11-14T22:30",
-   "casa": "Mirassol",
-   "ospite": "Atletico-MG",
-   "misurabile": "solo 1X2",
-   "flag": [
-    "MODELLO NON DISPONIBILE"
-   ]
-  },
-  {
-   "fixture_id": 1570024,
+   "fixture_id": 1570023,
    "lega": "Segunda División",
    "giornata": "Regular Season - 14",
-   "kickoff_locale": "2026-11-14T14:00",
-   "casa": "Valladolid",
-   "ospite": "Castellón",
+   "kickoff_locale": "2026-11-15T14:00",
+   "casa": "Tenerife",
+   "ospite": "AD Ceuta FC",
    "misurabile": "nessuno",
    "flag": [
     "MODELLO NON DISPONIBILE",
@@ -127,12 +132,12 @@
    ]
   },
   {
-   "fixture_id": 1570022,
+   "fixture_id": 1570018,
    "lega": "Segunda División",
    "giornata": "Regular Season - 14",
-   "kickoff_locale": "2026-11-14T16:15",
-   "casa": "Real Sociedad II",
-   "ospite": "Sporting Gijon",
+   "kickoff_locale": "2026-11-15T16:15",
+   "casa": "Granada CF",
+   "ospite": "Las Palmas",
    "misurabile": "nessuno",
    "flag": [
     "MODELLO NON DISPONIBILE",
@@ -140,12 +145,12 @@
    ]
   },
   {
-   "fixture_id": 1570015,
+   "fixture_id": 1570016,
    "lega": "Segunda División",
    "giornata": "Regular Season - 14",
-   "kickoff_locale": "2026-11-14T18:30",
-   "casa": "Almeria",
-   "ospite": "FC Andorra",
+   "kickoff_locale": "2026-11-15T18:30",
+   "casa": "Eibar",
+   "ospite": "Cadiz",
    "misurabile": "nessuno",
    "flag": [
     "MODELLO NON DISPONIBILE",
@@ -153,25 +158,12 @@
    ]
   },
   {
-   "fixture_id": 1570020,
+   "fixture_id": 1570017,
    "lega": "Segunda División",
    "giornata": "Regular Season - 14",
-   "kickoff_locale": "2026-11-14T18:30",
-   "casa": "Mallorca",
-   "ospite": "Cordoba",
-   "misurabile": "nessuno",
-   "flag": [
-    "MODELLO NON DISPONIBILE",
-    "COMPETIZIONE NON COPERTA"
-   ]
-  },
-  {
-   "fixture_id": 1570021,
-   "lega": "Segunda División",
-   "giornata": "Regular Season - 14",
-   "kickoff_locale": "2026-11-14T21:00",
-   "casa": "Oviedo",
-   "ospite": "Girona",
+   "kickoff_locale": "2026-11-15T18:30",
+   "casa": "Eldense",
+   "ospite": "Sabadell",
    "misurabile": "nessuno",
    "flag": [
     "MODELLO NON DISPONIBILE",
@@ -191,8 +183,20 @@
   "escluse_dal_cap": 0,
   "sospesi_per_degrado": 0
  },
+ "stato_registro": {
+  "pick_di_sistema": 1,
+  "soglia_revisione": 50,
+  "pick_regime_v21_misurate": 1,
+  "ultimo_giro_clv": "2026-11-14",
+  "giorni_dall_ultimo_giro": 1,
+  "giro_clv_ok": true,
+  "candidati_ultimi_7_giorni": 0,
+  "candidati_con_decisione": 0,
+  "decisioni_contate_dal": "2026-11-15",
+  "ok": true
+ },
  "motivi_degrado": [],
- "avviato_il": "2026-11-14T05:15:49Z",
- "durata_secondi": 3,
+ "avviato_il": "2026-11-15T05:15:51Z",
+ "durata_secondi": 4,
  "innesco": "workflow_dispatch"
 }
