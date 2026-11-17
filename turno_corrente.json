@@ -1,7 +1,7 @@
 {
  "schema_version": "1.1",
- "generato_il": "2026-11-16T05:16:00Z",
- "giorno_operativo": "2026-11-16",
+ "generato_il": "2026-11-17T05:15:57Z",
+ "giorno_operativo": "2026-11-17",
  "stato": "ok",
  "freschezza": {
   "stagione": {
@@ -11,7 +11,7 @@
   },
   "football_data": {
    "ultimo_risultato": "2026-11-08",
-   "giorni_fa": 8,
+   "giorni_fa": 9,
    "record": 805,
    "partite_senza_risultato": 0,
    "ok": true
@@ -42,13 +42,13 @@
    "stagione_richiesta": "2526",
    "record": 1170,
    "foto_del": "2026-07-09",
-   "foto_giorni": 130,
+   "foto_giorni": 131,
    "uso": "prior dai valori di rosa della stagione precedente, per scelta: la data della foto non cambia le probabilita' (flag ROSA NON AGGIORNATA sulle partite)",
    "ok": true
   }
  },
  "modello": {
-  "commit": "27caf1c",
+  "commit": "13245b3",
   "logloss_gap_test": 0.0135,
   "w_shrinkage": null,
   "shrinkage": {
@@ -117,21 +117,7 @@
  },
  "partite": [],
  "candidati": [],
- "partite_senza_modello": [
-  {
-   "fixture_id": 1570014,
-   "lega": "Segunda División",
-   "giornata": "Regular Season - 14",
-   "kickoff_locale": "2026-11-16T20:30",
-   "casa": "Albacete",
-   "ospite": "Celta de Vigo II",
-   "misurabile": "nessuno",
-   "flag": [
-    "MODELLO NON DISPONIBILE",
-    "COMPETIZIONE NON COPERTA"
-   ]
-  }
- ],
+ "partite_senza_modello": [],
  "diagnostica": {
   "partite_totali": 0,
   "candidati": 0,
@@ -149,7 +135,7 @@
   "soglia_revisione": 50,
   "pick_regime_v21_misurate": 1,
   "ultimo_giro_clv": "2026-11-14",
-  "giorni_dall_ultimo_giro": 2,
+  "giorni_dall_ultimo_giro": 3,
   "giro_clv_ok": true,
   "candidati_ultimi_7_giorni": 0,
   "candidati_con_decisione": 0,
@@ -157,7 +143,7 @@
   "ok": true
  },
  "motivi_degrado": [],
- "avviato_il": "2026-11-16T05:15:56Z",
- "durata_secondi": 4,
+ "avviato_il": "2026-11-17T05:15:52Z",
+ "durata_secondi": 5,
  "innesco": "workflow_dispatch"
 }
