@@ -1,7 +1,7 @@
 {
  "schema_version": "1.1",
- "generato_il": "2026-11-17T05:15:57Z",
- "giorno_operativo": "2026-11-17",
+ "generato_il": "2026-11-18T05:16:11Z",
+ "giorno_operativo": "2026-11-18",
  "stato": "ok",
  "freschezza": {
   "stagione": {
@@ -11,7 +11,7 @@
   },
   "football_data": {
    "ultimo_risultato": "2026-11-08",
-   "giorni_fa": 9,
+   "giorni_fa": 10,
    "record": 805,
    "partite_senza_risultato": 0,
    "ok": true
@@ -24,7 +24,7 @@
    "ok": true
   },
   "api_football_odds": {
-   "chiamate_ok": 21,
+   "chiamate_ok": 22,
    "fixture_con_quote": 0,
    "fixture_totali": 0,
    "ok": true
@@ -42,13 +42,13 @@
    "stagione_richiesta": "2526",
    "record": 1170,
    "foto_del": "2026-07-09",
-   "foto_giorni": 131,
+   "foto_giorni": 132,
    "uso": "prior dai valori di rosa della stagione precedente, per scelta: la data della foto non cambia le probabilita' (flag ROSA NON AGGIORNATA sulle partite)",
    "ok": true
   }
  },
  "modello": {
-  "commit": "13245b3",
+  "commit": "81471d3",
   "logloss_gap_test": 0.0135,
   "w_shrinkage": null,
   "shrinkage": {
@@ -117,7 +117,20 @@
  },
  "partite": [],
  "candidati": [],
- "partite_senza_modello": [],
+ "partite_senza_modello": [
+  {
+   "fixture_id": 1492451,
+   "lega": "Brasile Serie A",
+   "giornata": "Regular Season - 35",
+   "kickoff_locale": "2026-11-18T23:30",
+   "casa": "Coritiba",
+   "ospite": "Santos",
+   "misurabile": "solo 1X2",
+   "flag": [
+    "MODELLO NON DISPONIBILE"
+   ]
+  }
+ ],
  "diagnostica": {
   "partite_totali": 0,
   "candidati": 0,
@@ -134,8 +147,8 @@
   "pick_di_sistema": 1,
   "soglia_revisione": 50,
   "pick_regime_v21_misurate": 1,
-  "ultimo_giro_clv": "2026-11-14",
-  "giorni_dall_ultimo_giro": 3,
+  "ultimo_giro_clv": "2026-11-17",
+  "giorni_dall_ultimo_giro": 1,
   "giro_clv_ok": true,
   "candidati_ultimi_7_giorni": 0,
   "candidati_con_decisione": 0,
@@ -143,7 +156,7 @@
   "ok": true
  },
  "motivi_degrado": [],
- "avviato_il": "2026-11-17T05:15:52Z",
+ "avviato_il": "2026-11-18T05:16:07Z",
  "durata_secondi": 5,
  "innesco": "workflow_dispatch"
 }
