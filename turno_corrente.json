@@ -1,7 +1,7 @@
 {
  "schema_version": "1.1",
- "generato_il": "2026-11-18T05:16:11Z",
- "giorno_operativo": "2026-11-18",
+ "generato_il": "2026-11-19T05:16:10Z",
+ "giorno_operativo": "2026-11-19",
  "stato": "ok",
  "freschezza": {
   "stagione": {
@@ -11,7 +11,7 @@
   },
   "football_data": {
    "ultimo_risultato": "2026-11-08",
-   "giorni_fa": 10,
+   "giorni_fa": 11,
    "record": 805,
    "partite_senza_risultato": 0,
    "ok": true
@@ -24,7 +24,7 @@
    "ok": true
   },
   "api_football_odds": {
-   "chiamate_ok": 22,
+   "chiamate_ok": 23,
    "fixture_con_quote": 0,
    "fixture_totali": 0,
    "ok": true
@@ -42,13 +42,13 @@
    "stagione_richiesta": "2526",
    "record": 1170,
    "foto_del": "2026-07-09",
-   "foto_giorni": 132,
+   "foto_giorni": 133,
    "uso": "prior dai valori di rosa della stagione precedente, per scelta: la data della foto non cambia le probabilita' (flag ROSA NON AGGIORNATA sulle partite)",
    "ok": true
   }
  },
  "modello": {
-  "commit": "81471d3",
+  "commit": "a7f3e58",
   "logloss_gap_test": 0.0135,
   "w_shrinkage": null,
   "shrinkage": {
@@ -119,12 +119,24 @@
  "candidati": [],
  "partite_senza_modello": [
   {
-   "fixture_id": 1492451,
+   "fixture_id": 1492458,
    "lega": "Brasile Serie A",
    "giornata": "Regular Season - 35",
-   "kickoff_locale": "2026-11-18T23:30",
-   "casa": "Coritiba",
-   "ospite": "Santos",
+   "kickoff_locale": "2026-11-19T23:30",
+   "casa": "Vasco",
+   "ospite": "Internacional",
+   "misurabile": "solo 1X2",
+   "flag": [
+    "MODELLO NON DISPONIBILE"
+   ]
+  },
+  {
+   "fixture_id": 1492459,
+   "lega": "Brasile Serie A",
+   "giornata": "Regular Season - 35",
+   "kickoff_locale": "2026-11-19T23:30",
+   "casa": "Vitoria",
+   "ospite": "Bragantino",
    "misurabile": "solo 1X2",
    "flag": [
     "MODELLO NON DISPONIBILE"
@@ -148,7 +160,7 @@
   "soglia_revisione": 50,
   "pick_regime_v21_misurate": 1,
   "ultimo_giro_clv": "2026-11-17",
-  "giorni_dall_ultimo_giro": 1,
+  "giorni_dall_ultimo_giro": 2,
   "giro_clv_ok": true,
   "candidati_ultimi_7_giorni": 0,
   "candidati_con_decisione": 0,
@@ -156,7 +168,7 @@
   "ok": true
  },
  "motivi_degrado": [],
- "avviato_il": "2026-11-18T05:16:07Z",
+ "avviato_il": "2026-11-19T05:16:05Z",
  "durata_secondi": 5,
  "innesco": "workflow_dispatch"
 }
