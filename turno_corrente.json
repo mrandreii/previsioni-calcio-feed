@@ -3389,5 +3389,6 @@
  "motivi_degrado": [],
  "avviato_il": "2026-11-21T05:15:54Z",
  "durata_secondi": 22,
- "innesco": "workflow_dispatch"
+ "innesco": "workflow_dispatch",
+ "passata_2_il": "2026-11-21T14:01:20Z"
 }
