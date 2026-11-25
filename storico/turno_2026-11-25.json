@@ -1,0 +1,371 @@
+{
+ "schema_version": "1.1",
+ "generato_il": "2026-11-25T05:16:06Z",
+ "giorno_operativo": "2026-11-25",
+ "stato": "ok",
+ "freschezza": {
+  "stagione": {
+   "calendario": "2627",
+   "modello": "2627",
+   "ok": true
+  },
+  "football_data": {
+   "ultimo_risultato": "2026-11-23",
+   "giorni_fa": 2,
+   "record": 871,
+   "partite_senza_risultato": 0,
+   "ok": true
+  },
+  "understat_xg": {
+   "ultima_stagione": "2526",
+   "stagione_richiesta": "2526",
+   "record": 60,
+   "uso": "solo stagioni concluse: la stagione in corso entra nel modello coi gol, non con gli xG",
+   "ok": true
+  },
+  "api_football_odds": {
+   "chiamate_ok": 21,
+   "fixture_con_quote": 0,
+   "fixture_totali": 0,
+   "ok": true
+  },
+  "api_football_injuries": {
+   "chiamate_ok": 0,
+   "chiamate_fallite": 0,
+   "righe_salvate": 0,
+   "fixture_con_assenze": 0,
+   "usate_dal_modello": false,
+   "ok": true
+  },
+  "transfermarkt": {
+   "stagione_valori": "2526",
+   "stagione_richiesta": "2526",
+   "record": 1170,
+   "foto_del": "2026-07-09",
+   "foto_giorni": 139,
+   "uso": "prior dai valori di rosa della stagione precedente, per scelta: la data della foto non cambia le probabilita' (flag ROSA NON AGGIORNATA sulle partite)",
+   "ok": true
+  }
+ },
+ "modello": {
+  "commit": "5ed002f",
+  "logloss_gap_test": 0.0135,
+  "w_shrinkage": null,
+  "shrinkage": {
+   "testato": true,
+   "w_stimato": 0.0,
+   "adottato": false,
+   "motivo": "non batte il mercato fuori campione (analisi_2026_09/shrinkage_report.md)"
+  },
+  "gate_superato": false
+ },
+ "regole": {
+  "versione_regole": "2.1",
+  "in_vigore_dal": "2026-10-27",
+  "decide": "analyst",
+  "ruolo_modello": "sceglie le partite da guardare e pone il veto; resta in shadow finché gate_superato è false",
+  "criterio": "edge_pp",
+  "sconto_modello": 1.0,
+  "sconto_analyst": 0.97,
+  "soglia_pp": 0.03,
+  "formula_quota_ingresso": "pick ufficiali: 1 / (p_analyst x sconto_analyst - soglia_pp), per eccesso al centesimo. Shadow del modello: 1 / (p_modello x sconto_modello - soglia_pp), stessa regola di arrotondamento.",
+  "nota_quota_ingresso": "quota_ingresso_richiesta dentro ogni partita e' quella del MODELLO in shadow, non quella della pick ufficiale",
+  "quota_max": 3.0,
+  "pipeline_ammesse": [
+   "xg"
+  ],
+  "stake_fisso": 1,
+  "stake_max_pick": 1,
+  "esposizione_max_giorno": 3,
+  "combo_ammesse": false,
+  "mercati_misurabili": [
+   "1X2",
+   "DC",
+   "OU 2.5",
+   "AH linea principale"
+  ],
+  "senza_modello": {
+   "campionati": [
+    "Brasile Serie A",
+    "Argentina Liga Profesional"
+   ],
+   "mercati": [
+    "1X2"
+   ],
+   "sconto_analyst": 0.93,
+   "soglia_pp": 0.05,
+   "quota_max": 3.0,
+   "max_pick_giorno": 2,
+   "flag_obbligatorio": "SENZA VETO DEL MODELLO"
+  },
+  "revisione": {
+   "dopo_pick_misurabili": 50,
+   "conteggio_dal": "2026-10-27",
+   "sotto_meno_1_pp": "si torna alla v2.0: sconto 0,93 e soglia 5 punti",
+   "fra_meno_1_e_piu_1_pp": "inconcludente: altre 50 pick con le stesse regole",
+   "sopra_piu_1_pp": "si tiene la v2.1 e torna lo stake per fasce, coi tetti provvisori di H8 (2/10 e 4/10)"
+  },
+  "tetti_validi_fino_a": "decisione H8 (150 pick di sistema con CLV misurato): mai sopra 2/10 e 4/10 prima",
+  "penalita_rosa_non_recente": false,
+  "nota_fiducia": "fiducia_suggerita e' gia' calcolata con queste regole: non va ricalcolata dai flag. Con penalita_rosa_non_recente false, snapshot_rosa_recente false non toglie punti. Con stake_fisso i flag non riducono lo stake: il veto resta fiducia - 3 < stake.",
+  "significato_pipeline": {
+   "xg": "forze costruite sugli xG Understat delle stagioni concluse, piu' il prior dai valori di rosa; la stagione in corso entra coi gol",
+   "ripiego": "forze dai tiri in porta, senza xG e senza prior (Eredivisie, Portogallo, Belgio)"
+  },
+  "nota_assenze": "l'elenco degli assenti e' per il controllo a mano: il modello non lo usa (assenze_alimentate false)",
+  "modalita": "shadow"
+ },
+ "partite": [],
+ "candidati": [],
+ "partite_senza_modello": [
+  {
+   "fixture_id": 1635728,
+   "lega": "Champions League",
+   "giornata": "League Stage - 5",
+   "kickoff_locale": "2026-11-25T18:45",
+   "casa": "Slavia Praha",
+   "ospite": "Villarreal",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1635718,
+   "lega": "Champions League",
+   "giornata": "League Stage - 5",
+   "kickoff_locale": "2026-11-25T18:45",
+   "casa": "Sabah FA",
+   "ospite": "Barcelona",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1635682,
+   "lega": "Champions League",
+   "giornata": "League Stage - 5",
+   "kickoff_locale": "2026-11-25T21:00",
+   "casa": "Lille",
+   "ospite": "Bayern München",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1635703,
+   "lega": "Champions League",
+   "giornata": "League Stage - 5",
+   "kickoff_locale": "2026-11-25T21:00",
+   "casa": "Paris Saint Germain",
+   "ospite": "AS Roma",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1635735,
+   "lega": "Champions League",
+   "giornata": "League Stage - 5",
+   "kickoff_locale": "2026-11-25T21:00",
+   "casa": "Sporting CP",
+   "ospite": "Manchester United",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1635673,
+   "lega": "Champions League",
+   "giornata": "League Stage - 5",
+   "kickoff_locale": "2026-11-25T21:00",
+   "casa": "Inter",
+   "ospite": "VfB Stuttgart",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1635625,
+   "lega": "Champions League",
+   "giornata": "League Stage - 5",
+   "kickoff_locale": "2026-11-25T21:00",
+   "casa": "Atletico Madrid",
+   "ospite": "Viking",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1635724,
+   "lega": "Champions League",
+   "giornata": "League Stage - 5",
+   "kickoff_locale": "2026-11-25T21:00",
+   "casa": "Shakhtar Donetsk",
+   "ospite": "Fenerbahçe",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1635642,
+   "lega": "Champions League",
+   "giornata": "League Stage - 5",
+   "kickoff_locale": "2026-11-25T21:00",
+   "casa": "Club Brugge KV",
+   "ospite": "Liverpool",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1563286,
+   "lega": "Championship",
+   "giornata": "Regular Season - 17",
+   "kickoff_locale": "2026-11-25T20:45",
+   "casa": "Watford",
+   "ospite": "Blackburn",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1563284,
+   "lega": "Championship",
+   "giornata": "Regular Season - 17",
+   "kickoff_locale": "2026-11-25T20:45",
+   "casa": "Burnley",
+   "ospite": "Birmingham",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1563283,
+   "lega": "Championship",
+   "giornata": "Regular Season - 17",
+   "kickoff_locale": "2026-11-25T20:45",
+   "casa": "Bolton",
+   "ospite": "West Brom",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1563285,
+   "lega": "Championship",
+   "giornata": "Regular Season - 17",
+   "kickoff_locale": "2026-11-25T21:00",
+   "casa": "Stoke City",
+   "ospite": "Millwall",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1601615,
+   "lega": "Serie B",
+   "giornata": "Regular Season - 13",
+   "kickoff_locale": "2026-11-25T19:00",
+   "casa": "Cremonese",
+   "ospite": "Avellino",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1601622,
+   "lega": "Serie B",
+   "giornata": "Regular Season - 13",
+   "kickoff_locale": "2026-11-25T20:00",
+   "casa": "Pisa",
+   "ospite": "Modena",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1601620,
+   "lega": "Serie B",
+   "giornata": "Regular Season - 13",
+   "kickoff_locale": "2026-11-25T20:00",
+   "casa": "Padova",
+   "ospite": "Sampdoria",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1601619,
+   "lega": "Serie B",
+   "giornata": "Regular Season - 13",
+   "kickoff_locale": "2026-11-25T20:00",
+   "casa": "Mantova",
+   "ospite": "Arezzo",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  }
+ ],
+ "diagnostica": {
+  "partite_totali": 0,
+  "candidati": 0,
+  "scartati_soglia": 0,
+  "scartati_quota_max": 0,
+  "scartati_dati": 0,
+  "scartati_pipeline": 0,
+  "scartati_fiducia": 0,
+  "scartati_stake": 0,
+  "escluse_dal_cap": 0,
+  "sospesi_per_degrado": 0
+ },
+ "stato_registro": {
+  "pick_di_sistema": 1,
+  "soglia_revisione": 50,
+  "pick_regime_v21_misurate": 1,
+  "ultimo_giro_clv": "2026-11-24",
+  "giorni_dall_ultimo_giro": 1,
+  "giro_clv_ok": true,
+  "candidati_ultimi_7_giorni": 4,
+  "candidati_con_decisione": 3,
+  "decisioni_contate_dal": "2026-11-15",
+  "ok": true
+ },
+ "motivi_degrado": [],
+ "avviato_il": "2026-11-25T05:16:01Z",
+ "durata_secondi": 5,
+ "innesco": "workflow_dispatch"
+}
