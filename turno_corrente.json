@@ -1,7 +1,7 @@
 {
  "schema_version": "1.1",
- "generato_il": "2026-11-25T05:16:06Z",
- "giorno_operativo": "2026-11-25",
+ "generato_il": "2026-11-26T05:15:59Z",
+ "giorno_operativo": "2026-11-26",
  "stato": "ok",
  "freschezza": {
   "stagione": {
@@ -11,7 +11,7 @@
   },
   "football_data": {
    "ultimo_risultato": "2026-11-23",
-   "giorni_fa": 2,
+   "giorni_fa": 3,
    "record": 871,
    "partite_senza_risultato": 0,
    "ok": true
@@ -42,13 +42,13 @@
    "stagione_richiesta": "2526",
    "record": 1170,
    "foto_del": "2026-07-09",
-   "foto_giorni": 139,
+   "foto_giorni": 140,
    "uso": "prior dai valori di rosa della stagione precedente, per scelta: la data della foto non cambia le probabilita' (flag ROSA NON AGGIORNATA sulle partite)",
    "ok": true
   }
  },
  "modello": {
-  "commit": "5ed002f",
+  "commit": "6f5e33a",
   "logloss_gap_test": 0.0135,
   "w_shrinkage": null,
   "shrinkage": {
@@ -119,12 +119,12 @@
  "candidati": [],
  "partite_senza_modello": [
   {
-   "fixture_id": 1635728,
-   "lega": "Champions League",
+   "fixture_id": 1636231,
+   "lega": "Europa League",
    "giornata": "League Stage - 5",
-   "kickoff_locale": "2026-11-25T18:45",
-   "casa": "Slavia Praha",
-   "ospite": "Villarreal",
+   "kickoff_locale": "2026-11-26T18:45",
+   "casa": "Beşiktaş",
+   "ospite": "Hapoel Beer Sheva",
    "misurabile": "nessuno",
    "flag": [
     "MODELLO NON DISPONIBILE",
@@ -132,12 +132,12 @@
    ]
   },
   {
-   "fixture_id": 1635718,
-   "lega": "Champions League",
+   "fixture_id": 1636244,
+   "lega": "Europa League",
    "giornata": "League Stage - 5",
-   "kickoff_locale": "2026-11-25T18:45",
-   "casa": "Sabah FA",
-   "ospite": "Barcelona",
+   "kickoff_locale": "2026-11-26T18:45",
+   "casa": "Celta Vigo",
+   "ospite": "Bournemouth",
    "misurabile": "nessuno",
    "flag": [
     "MODELLO NON DISPONIBILE",
@@ -145,12 +145,12 @@
    ]
   },
   {
-   "fixture_id": 1635682,
-   "lega": "Champions League",
+   "fixture_id": 1636255,
+   "lega": "Europa League",
    "giornata": "League Stage - 5",
-   "kickoff_locale": "2026-11-25T21:00",
-   "casa": "Lille",
-   "ospite": "Bayern München",
+   "kickoff_locale": "2026-11-26T18:45",
+   "casa": "Dinamo Zagreb",
+   "ospite": "Bayer Leverkusen",
    "misurabile": "nessuno",
    "flag": [
     "MODELLO NON DISPONIBILE",
@@ -158,12 +158,12 @@
    ]
   },
   {
-   "fixture_id": 1635703,
-   "lega": "Champions League",
+   "fixture_id": 1636298,
+   "lega": "Europa League",
    "giornata": "League Stage - 5",
-   "kickoff_locale": "2026-11-25T21:00",
-   "casa": "Paris Saint Germain",
-   "ospite": "AS Roma",
+   "kickoff_locale": "2026-11-26T18:45",
+   "casa": "Marseille",
+   "ospite": "Levski Sofia",
    "misurabile": "nessuno",
    "flag": [
     "MODELLO NON DISPONIBILE",
@@ -171,12 +171,12 @@
    ]
   },
   {
-   "fixture_id": 1635735,
-   "lega": "Champions League",
+   "fixture_id": 1636307,
+   "lega": "Europa League",
    "giornata": "League Stage - 5",
-   "kickoff_locale": "2026-11-25T21:00",
-   "casa": "Sporting CP",
-   "ospite": "Manchester United",
+   "kickoff_locale": "2026-11-26T18:45",
+   "casa": "Olympiakos Piraeus",
+   "ospite": "AC Milan",
    "misurabile": "nessuno",
    "flag": [
     "MODELLO NON DISPONIBILE",
@@ -184,12 +184,12 @@
    ]
   },
   {
-   "fixture_id": 1635673,
-   "lega": "Champions League",
+   "fixture_id": 1636315,
+   "lega": "Europa League",
    "giornata": "League Stage - 5",
-   "kickoff_locale": "2026-11-25T21:00",
-   "casa": "Inter",
-   "ospite": "VfB Stuttgart",
+   "kickoff_locale": "2026-11-26T18:45",
+   "casa": "Plzen",
+   "ospite": "Benfica",
    "misurabile": "nessuno",
    "flag": [
     "MODELLO NON DISPONIBILE",
@@ -197,12 +197,12 @@
    ]
   },
   {
-   "fixture_id": 1635625,
-   "lega": "Champions League",
+   "fixture_id": 1636329,
+   "lega": "Europa League",
    "giornata": "League Stage - 5",
-   "kickoff_locale": "2026-11-25T21:00",
-   "casa": "Atletico Madrid",
-   "ospite": "Viking",
+   "kickoff_locale": "2026-11-26T18:45",
+   "casa": "Union St. Gilloise",
+   "ospite": "Lech Poznan",
    "misurabile": "nessuno",
    "flag": [
     "MODELLO NON DISPONIBILE",
@@ -210,12 +210,12 @@
    ]
   },
   {
-   "fixture_id": 1635724,
-   "lega": "Champions League",
+   "fixture_id": 1636334,
+   "lega": "Europa League",
    "giornata": "League Stage - 5",
-   "kickoff_locale": "2026-11-25T21:00",
-   "casa": "Shakhtar Donetsk",
-   "ospite": "Fenerbahçe",
+   "kickoff_locale": "2026-11-26T18:45",
+   "casa": "Red Bull Salzburg",
+   "ospite": "Ararat-Armenia",
    "misurabile": "nessuno",
    "flag": [
     "MODELLO NON DISPONIBILE",
@@ -223,12 +223,12 @@
    ]
   },
   {
-   "fixture_id": 1635642,
-   "lega": "Champions League",
+   "fixture_id": 1636252,
+   "lega": "Europa League",
    "giornata": "League Stage - 5",
-   "kickoff_locale": "2026-11-25T21:00",
-   "casa": "Club Brugge KV",
-   "ospite": "Liverpool",
+   "kickoff_locale": "2026-11-26T21:00",
+   "casa": "Crystal Palace",
+   "ospite": "Real Sociedad",
    "misurabile": "nessuno",
    "flag": [
     "MODELLO NON DISPONIBILE",
@@ -236,12 +236,12 @@
    ]
   },
   {
-   "fixture_id": 1563286,
-   "lega": "Championship",
-   "giornata": "Regular Season - 17",
-   "kickoff_locale": "2026-11-25T20:45",
-   "casa": "Watford",
-   "ospite": "Blackburn",
+   "fixture_id": 1636261,
+   "lega": "Europa League",
+   "giornata": "League Stage - 5",
+   "kickoff_locale": "2026-11-26T21:00",
+   "casa": "Ferencvarosi TC",
+   "ospite": "Celje",
    "misurabile": "nessuno",
    "flag": [
     "MODELLO NON DISPONIBILE",
@@ -249,12 +249,12 @@
    ]
   },
   {
-   "fixture_id": 1563284,
-   "lega": "Championship",
-   "giornata": "Regular Season - 17",
-   "kickoff_locale": "2026-11-25T20:45",
-   "casa": "Burnley",
-   "ospite": "Birmingham",
+   "fixture_id": 1636270,
+   "lega": "Europa League",
+   "giornata": "League Stage - 5",
+   "kickoff_locale": "2026-11-26T21:00",
+   "casa": "1899 Hoffenheim",
+   "ospite": "Sturm Graz",
    "misurabile": "nessuno",
    "flag": [
     "MODELLO NON DISPONIBILE",
@@ -262,12 +262,12 @@
    ]
   },
   {
-   "fixture_id": 1563283,
-   "lega": "Championship",
-   "giornata": "Regular Season - 17",
-   "kickoff_locale": "2026-11-25T20:45",
-   "casa": "Bolton",
-   "ospite": "West Brom",
+   "fixture_id": 1636277,
+   "lega": "Europa League",
+   "giornata": "League Stage - 5",
+   "kickoff_locale": "2026-11-26T21:00",
+   "casa": "Juventus",
+   "ospite": "Omonia Nicosia",
    "misurabile": "nessuno",
    "flag": [
     "MODELLO NON DISPONIBILE",
@@ -275,12 +275,12 @@
    ]
   },
   {
-   "fixture_id": 1563285,
-   "lega": "Championship",
-   "giornata": "Regular Season - 17",
-   "kickoff_locale": "2026-11-25T21:00",
-   "casa": "Stoke City",
-   "ospite": "Millwall",
+   "fixture_id": 1636294,
+   "lega": "Europa League",
+   "giornata": "League Stage - 5",
+   "kickoff_locale": "2026-11-26T21:00",
+   "casa": "Lyon",
+   "ospite": "Lillestrom",
    "misurabile": "nessuno",
    "flag": [
     "MODELLO NON DISPONIBILE",
@@ -288,12 +288,311 @@
    ]
   },
   {
-   "fixture_id": 1601615,
-   "lega": "Serie B",
+   "fixture_id": 1636301,
+   "lega": "Europa League",
+   "giornata": "League Stage - 5",
+   "kickoff_locale": "2026-11-26T21:00",
+   "casa": "NEC Nijmegen",
+   "ospite": "Rennes",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636305,
+   "lega": "Europa League",
+   "giornata": "League Stage - 5",
+   "kickoff_locale": "2026-11-26T21:00",
+   "casa": "OFI",
+   "ospite": "Anderlecht",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636336,
+   "lega": "Europa League",
+   "giornata": "League Stage - 5",
+   "kickoff_locale": "2026-11-26T21:00",
+   "casa": "Sparta Praha",
+   "ospite": "AZ Alkmaar",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636343,
+   "lega": "Europa League",
+   "giornata": "League Stage - 5",
+   "kickoff_locale": "2026-11-26T21:00",
+   "casa": "Sunderland",
+   "ospite": "Jagiellonia",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636349,
+   "lega": "Europa League",
+   "giornata": "League Stage - 5",
+   "kickoff_locale": "2026-11-26T21:00",
+   "casa": "Torreense",
+   "ospite": "Celtic",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636435,
+   "lega": "Conference League",
+   "giornata": "League Stage - 4",
+   "kickoff_locale": "2026-11-26T16:30",
+   "casa": "Kairat Almaty",
+   "ospite": "Mjallby AIF",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636381,
+   "lega": "Conference League",
+   "giornata": "League Stage - 4",
+   "kickoff_locale": "2026-11-26T18:45",
+   "casa": "Ajax",
+   "ospite": "FC Thun",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636393,
+   "lega": "Conference League",
+   "giornata": "League Stage - 4",
+   "kickoff_locale": "2026-11-26T18:45",
+   "casa": "Brann",
+   "ospite": "Aarhus",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636395,
+   "lega": "Conference League",
+   "giornata": "League Stage - 4",
+   "kickoff_locale": "2026-11-26T18:45",
+   "casa": "Brighton",
+   "ospite": "Universitatea Craiova",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636405,
+   "lega": "Conference League",
+   "giornata": "League Stage - 4",
+   "kickoff_locale": "2026-11-26T18:45",
+   "casa": "Egnatia Rrogozhinë",
+   "ospite": "Lincoln Red Imps FC",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636421,
+   "lega": "Conference League",
+   "giornata": "League Stage - 4",
+   "kickoff_locale": "2026-11-26T18:45",
+   "casa": "Heart Of Midlothian",
+   "ospite": "Monaco",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636426,
+   "lega": "Conference League",
+   "giornata": "League Stage - 4",
+   "kickoff_locale": "2026-11-26T18:45",
+   "casa": "FC Iberia 1999",
+   "ospite": "Getafe",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636431,
+   "lega": "Conference League",
+   "giornata": "League Stage - 4",
+   "kickoff_locale": "2026-11-26T18:45",
+   "casa": "FK Jablonec",
+   "ospite": "FC Lugano",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636438,
+   "lega": "Conference League",
+   "giornata": "League Stage - 4",
+   "kickoff_locale": "2026-11-26T18:45",
+   "casa": "Kauno Žalgiris",
+   "ospite": "Riga",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636460,
+   "lega": "Conference League",
+   "giornata": "League Stage - 4",
+   "kickoff_locale": "2026-11-26T18:45",
+   "casa": "Pafos",
+   "ospite": "FC Midtjylland",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636386,
+   "lega": "Conference League",
+   "giornata": "League Stage - 4",
+   "kickoff_locale": "2026-11-26T21:00",
+   "casa": "Borac Banja Luka",
+   "ospite": "Atalanta",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636389,
+   "lega": "Conference League",
+   "giornata": "League Stage - 4",
+   "kickoff_locale": "2026-11-26T21:00",
+   "casa": "SC Braga",
+   "ospite": "KuPS",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636402,
+   "lega": "Conference League",
+   "giornata": "League Stage - 4",
+   "kickoff_locale": "2026-11-26T21:00",
+   "casa": "CSKA Sofia",
+   "ospite": "Trabzonspor",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636410,
+   "lega": "Conference League",
+   "giornata": "League Stage - 4",
+   "kickoff_locale": "2026-11-26T21:00",
+   "casa": "SC Freiburg",
+   "ospite": "Twente",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636412,
+   "lega": "Conference League",
+   "giornata": "League Stage - 4",
+   "kickoff_locale": "2026-11-26T21:00",
+   "casa": "Gent",
+   "ospite": "FK Crvena Zvezda",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636420,
+   "lega": "Conference League",
+   "giornata": "League Stage - 4",
+   "kickoff_locale": "2026-11-26T21:00",
+   "casa": "HNK Hajduk Split",
+   "ospite": "St. Truiden",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636428,
+   "lega": "Conference League",
+   "giornata": "League Stage - 4",
+   "kickoff_locale": "2026-11-26T21:00",
+   "casa": "Inter Club d'Escaldes",
+   "ospite": "FC Copenhagen",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1636457,
+   "lega": "Conference League",
+   "giornata": "League Stage - 4",
+   "kickoff_locale": "2026-11-26T21:00",
+   "casa": "FC Nordsjaelland",
+   "ospite": "Panathinaikos",
+   "misurabile": "nessuno",
+   "flag": [
+    "MODELLO NON DISPONIBILE",
+    "COMPETIZIONE NON COPERTA"
+   ]
+  },
+  {
+   "fixture_id": 1603084,
+   "lega": "Saudi Pro League",
    "giornata": "Regular Season - 13",
-   "kickoff_locale": "2026-11-25T19:00",
-   "casa": "Cremonese",
-   "ospite": "Avellino",
+   "kickoff_locale": "2026-11-26T15:25",
+   "casa": "Al-Fateh",
+   "ospite": "Al Riyadh",
    "misurabile": "nessuno",
    "flag": [
     "MODELLO NON DISPONIBILE",
@@ -301,12 +600,12 @@
    ]
   },
   {
-   "fixture_id": 1601622,
-   "lega": "Serie B",
+   "fixture_id": 1603080,
+   "lega": "Saudi Pro League",
    "giornata": "Regular Season - 13",
-   "kickoff_locale": "2026-11-25T20:00",
-   "casa": "Pisa",
-   "ospite": "Modena",
+   "kickoff_locale": "2026-11-26T16:05",
+   "casa": "Abha",
+   "ospite": "Al Shabab",
    "misurabile": "nessuno",
    "flag": [
     "MODELLO NON DISPONIBILE",
@@ -314,25 +613,12 @@
    ]
   },
   {
-   "fixture_id": 1601620,
-   "lega": "Serie B",
+   "fixture_id": 1603083,
+   "lega": "Saudi Pro League",
    "giornata": "Regular Season - 13",
-   "kickoff_locale": "2026-11-25T20:00",
-   "casa": "Padova",
-   "ospite": "Sampdoria",
-   "misurabile": "nessuno",
-   "flag": [
-    "MODELLO NON DISPONIBILE",
-    "COMPETIZIONE NON COPERTA"
-   ]
-  },
-  {
-   "fixture_id": 1601619,
-   "lega": "Serie B",
-   "giornata": "Regular Season - 13",
-   "kickoff_locale": "2026-11-25T20:00",
-   "casa": "Mantova",
-   "ospite": "Arezzo",
+   "kickoff_locale": "2026-11-26T18:30",
+   "casa": "Al-Faisaly FC",
+   "ospite": "Al Diriyah",
    "misurabile": "nessuno",
    "flag": [
     "MODELLO NON DISPONIBILE",
@@ -357,7 +643,7 @@
   "soglia_revisione": 50,
   "pick_regime_v21_misurate": 1,
   "ultimo_giro_clv": "2026-11-24",
-  "giorni_dall_ultimo_giro": 1,
+  "giorni_dall_ultimo_giro": 2,
   "giro_clv_ok": true,
   "candidati_ultimi_7_giorni": 4,
   "candidati_con_decisione": 3,
@@ -365,7 +651,7 @@
   "ok": true
  },
  "motivi_degrado": [],
- "avviato_il": "2026-11-25T05:16:01Z",
- "durata_secondi": 5,
+ "avviato_il": "2026-11-26T05:15:56Z",
+ "durata_secondi": 4,
  "innesco": "workflow_dispatch"
 }
