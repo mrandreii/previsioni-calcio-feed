@@ -240,6 +240,8 @@
    "fiducia_suggerita": 5,
    "flag": [
     "ASSENZE NON ALIMENTATE",
+    "LINE MOVEMENT ↑",
+    "MOVIMENTO ANOMALO",
     "ROSA NON AGGIORNATA"
    ],
    "assenze": {
@@ -835,5 +837,6 @@
  "motivi_degrado": [],
  "avviato_il": "2026-11-27T05:15:53Z",
  "durata_secondi": 10,
- "innesco": "workflow_dispatch"
+ "innesco": "workflow_dispatch",
+ "passata_2_il": "2026-11-27T14:01:28Z"
 }
